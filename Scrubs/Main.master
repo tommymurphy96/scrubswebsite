@@ -1,0 +1,183 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>BowTies & Scrubs</title>
+    <link href="Style/Main.css" rel="stylesheet" />
+    <link href="//cdn.shopify.com/s/files/1/1024/6595/t/2/assets/bootstrap.min.css?1626646446082763859" rel="stylesheet" type="text/css" media="all"/>
+    <link href="//cdn.shopify.com/s/files/1/1024/6595/t/2/assets/theme-styles.css?1626646446082763859" rel="stylesheet" type="text/css" media="all"/>
+    <link href="//cdn.shopify.com/s/files/1/1024/6595/t/2/assets/theme-styles-setting.css?1626646446082763859" rel="stylesheet" type="text/css" media="all"/>
+    <link href="//cdn.shopify.com/s/files/1/1024/6595/t/2/assets/theme-styles-responsive.css?1626646446082763859" rel="stylesheet" type="text/css" media="all"/>
+    <link href="//cdn.shopify.com/s/files/1/1024/6595/t/2/assets/animate.css?1626646446082763859" rel="stylesheet" type="text/css" media="all"/>
+    <link href="//cdn.shopify.com/s/files/1/1024/6595/t/2/assets/retina-responsive.css?1626646446082763859" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900%7CRoboto:100,200,300,400,500,600,700,800,900%7CRoboto+Condensed:100,200,300,400,500,600,700,800,900" media="all"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="MainData">
+        <div id="Header"><div class="container">
+
+      <div class="header-mobile">
+        <div class="menu-block visible-phone"><!-- start Navigation Mobile  -->
+          <div id="showLeftPush" class="resized gf-menu-device-wrapper"></div>
+        </div><!-- end Navigation Mobile  --> 
+
+        <div class="customer-area dropdown">
+          <a data-toggle="dropdown" href="#">Dropdown trigger</a>
+          <div class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <p>
+              <a href="/account">My Account</a>
+            </p>
+            
+              
+	<a class="iWishView" href="#" data-customer-id="0">Wishlist</a>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="header-panel-top">
+        <div class="nav-search on">
+
+
+<a class="icon-search" href="javascript:void(0)">Search</a>
+<form action="/pages/search-results-page" method="get" class="input-group search-bar" role="search">
+  
+  
+  
+  <input id="mbtsearch" type="text" name="q" value="" placeholder="search" class="input-group-field snize-input-style" aria-label="Search Site" autocomplete="off">
+  
+  <span class="input-group-btn">
+    <input type="submit" class="btn" value="Search">
+  </span>
+</form>
+</div>
+        <!--div class="currency" id="coin-container"></div-->
+        
+        
+        
+        
+          
+            <p class="text_order">Order online or call (+44) 020 8050 8060</p>
+          
+        
+      </div>
+      
+      <div class="header-panel">
+        <div class="row">
+          <h1 class="header-logo col-xs-4">
+            
+            <a href="/">
+              <img src="//cdn.shopify.com/s/files/1/1024/6595/t/2/assets/logo.png?1626646446082763859" alt="Mrs Bow Tie">
+              
+              	<img src="//cdn.shopify.com/s/files/1/1024/6595/t/2/assets/logo_2x.png?1626646446082763859" alt="Mrs Bow Tie">
+              
+            </a>
+            
+          </h1>
+
+          <div class="header-panel-bottom col-xs-8">
+            
+              
+              <p class="free_shipping">UK NEXT-DAY DELIVERY &amp; FREE RETURNS AVAILABLE <br> FAST INTERNATIONAL DELIVERY</p>
+              
+            
+
+            
+
+
+
+
+
+             <!-- End Top Header --> 
+          <ul class="customer-links">
+  
+  <li class="wishlist">
+    <span class="icon">&nbsp;</span>
+    <a class="iWishView" href="#" data-customer-id="0">My Wishlist</a>
+  </li>
+  
+  <li>
+    <a id="customer_login_link" href="/account/login">Sign In</a>
+    
+    <span class="or">or</span>
+    <a a="" id="customer_register_link" href="/account/register">Create an account</a>
+    
+  </li>
+</ul><div class="top-header ">
+              <div class="wrapper-top-cart">
+                <p class="top-cart">
+                  <span class="icon">&nbsp;</span>
+                  <a href="javascript:void(0)" id="cartToggle">
+                    <span class="first">Shopping Cart</span>
+                    <span id="cartCount">0</span>
+                  </a> 
+                </p>
+                <div id="dropdown-cart" style="overflow: hidden; display: none;"> 
+                  <div class="no-items">
+                    <p>Your cart is currently empty.</p>
+                    <p class="text-continue"><a href="javascript:void(0)">Continue Shopping</a></p>
+                  </div>
+                  <div class="has-items" style="display: none;">
+                    <ol class="mini-products-list">  
+                      
+                    </ol>
+                    <div class="summary">                
+                      <p class="total">
+                        <span class="label"><span>Total</span>:</span>
+                        <span class="price"><span class="money" data-currency-gbp="£ 0.00" data-original-value="£ 0.00" data-original-currency="GBP" data-current-value="$0.00" data-current-currency="CAD">$0.00</span></span> 
+                      </p>
+                    </div>
+                    <div class="actions">
+                      <button class="btn" onclick="window.location='/checkout'">Check Out</button>
+                    </div>
+                    <p class="text-cart"><a href="/cart">Or View Cart</a></p>
+                  </div>
+                </div>
+              </div>
+
+              
+            </div></div>
+          <div class="nav-search on">
+
+
+<a class="icon-search" href="javascript:void(0)">Search</a>
+<form action="/pages/search-results-page" method="get" class="input-group search-bar" role="search">
+  
+  
+  
+  <input id="Text1" type="text" name="q" value="" placeholder="search" class="input-group-field snize-input-style" aria-label="Search Site" autocomplete="off">
+  
+  <span class="input-group-btn">
+    <input type="submit" class="btn" value="Search">
+  </span>
+</form>
+</div>
+        </div>
+
+      </div>
+    </div>r</div>
+        <div id="Menu"> 
+            <ul id="Navigation">
+                <li><a href="Home.aspx">Home</a></li>
+                <li><a href="BowTie.aspx">BowTie</a></li>
+                <li><a href="Scrub.aspx">Scrubs</a></li>
+                <li><a href="About.aspx">About</a></li>
+            </ul>
+            </div>
+
+        <div id="Content">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+        <div id="Footer">made by darshita</div>  
+    </div>
+    </form>
+</body>
+</html>
