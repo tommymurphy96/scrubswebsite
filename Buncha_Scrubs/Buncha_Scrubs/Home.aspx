@@ -28,7 +28,7 @@
                     <a class="navbar-brand" href="#">Avery Bow</a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul id="Nav">
+                    <ul class="nav navbar-nav">
                         <li><a href="Home.aspx">Home</a></li>
                         <li><a href="Collection.aspx">Collection</a></li>
                         <li><a href="Catalog.aspx">Catalog</a></li>
