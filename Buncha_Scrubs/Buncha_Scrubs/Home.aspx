@@ -12,7 +12,7 @@
     <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
 </head>
 <body>
-    <form id="form1" runat="server">
+    
         <nav id="myNavBar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container-fluid">
                 <div id="navbar-header">
@@ -49,6 +49,6 @@
                 </footer>
             </div>
         </div>
-    </form>
+
 </body>
 </html>
