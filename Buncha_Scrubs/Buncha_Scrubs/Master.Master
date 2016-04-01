@@ -14,8 +14,10 @@
     <div id="NavigationBar">
          <ul id="Nav">
                 <li><a href="Home.aspx">Home</a></li>
-                <li><a href="Collection">BowTie</a></li>
-                <li><a href="Scrub.aspx">Scrubs</a></li>
+                <li><a href="Collection.aspx">Collection</a></li>
+                <li><a href="Catalog.aspx">Catalog</a></li>
+                <li><a href="Video.aspx">Video</a></li>
+                <li><a href="Connect.aspx">Connect</a></li>
                 <li><a href="About.aspx">About</a></li>
             </ul>
     </div>
