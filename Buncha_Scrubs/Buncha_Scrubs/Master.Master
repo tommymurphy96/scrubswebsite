@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="Buncha_Scrubs.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="Header">
+    <div id="NavigationBar">
+         <ul id="Nav">
+                <li><a href="Home.aspx">Home</a></li>
+                <li><a href="Collection">BowTie</a></li>
+                <li><a href="Scrub.aspx">Scrubs</a></li>
+                <li><a href="About.aspx">About</a></li>
+            </ul>
+    </div>
+    <div id="Content_Area"></div>
+    <div id="Footer"></div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
