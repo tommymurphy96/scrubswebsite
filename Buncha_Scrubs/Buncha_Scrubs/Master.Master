@@ -11,40 +11,47 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="Header">
-    <div id="NavigationBar">
+    <div id="Wrapper">
+    <div id="Header"></div>
+    <div id="NavigationBar">    
          <ul id="Nav">
                 <li><a href="Home.aspx">Home</a></li>
-                <li><a href="Collection.aspx">Collection</a></li>
-                    <ul>
-                        <li><a href="#">Autumn/Winter 2016</a></li>
+                <li><a href="Collection.aspx">Collection</a>
+                  <ul>
+                        <li><a href="#">Autumn/Winter 2016</a>
                             <ul>
                                 <li><a href="#">Prints</a></li>
                                 <li><a href="#">Products</a></li>
                             </ul>
-                        <li><a href="#">Spring/Summer 2017</a></li>
-                        <ul>
+                        </li>
+                        <li><a href="#">Spring/Summer 2017</a>
+                            <ul>
                                 <li><a href="#">Prints</a></li>
                                 <li><a href="#">Products</a></li>
-                            </ul
-                    </ul>
+                            </ul>
+                        </li>
+                      </ul>
+                </li>
                 <li><a href="Catalog.aspx">Catalog</a></li>
                 <li><a href="Video.aspx">Video</a></li>
-                <li><a href="Connect.aspx">Connect</a></li>
-                    <ul>
+                <li><a href="Connect.aspx">Connect</a>
+                  <ul>
                         <li><a href="#">FaceBook</a></li>
                         <li><a href="#">Instagram</a></li>
                         <li><a href="#">SnapChat</a></li>
                         <li><a href="#">Twitter</a></li>
-                    </ul>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Weibo</a></li>
+                   </ul>
+                </li>
                 <li><a href="About.aspx">About</a></li>
             </ul>
+            
     </div>
     <div id="Content_Area"></div>
-    <div id="Footer"></div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
+    <div id="Footer">
+        <p>All rights reserved.</p>
+    </div>
     </div>
     </form>
 </body>
