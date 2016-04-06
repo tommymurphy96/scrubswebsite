@@ -19,6 +19,7 @@
 
 </head>
 <body>
+<div>
 <img src="Logo/main logo.png"/>   
 </div>
     <nav id="myNavBar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
