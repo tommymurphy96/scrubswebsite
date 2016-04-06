@@ -2,3 +2,4 @@ C:\Users\dupuis1439\Documents\GitHub\scrubswebsite\Buncha_Scrubs\Buncha_Scrubs\b
 C:\Users\dupuis1439\Documents\GitHub\scrubswebsite\Buncha_Scrubs\Buncha_Scrubs\bin\Buncha_Scrubs.pdb
 C:\Users\dupuis1439\Documents\GitHub\scrubswebsite\Buncha_Scrubs\Buncha_Scrubs\obj\Debug\Buncha_Scrubs.dll
 C:\Users\dupuis1439\Documents\GitHub\scrubswebsite\Buncha_Scrubs\Buncha_Scrubs\obj\Debug\Buncha_Scrubs.pdb
+C:\Users\dupuis1439\Documents\GitHub\scrubswebsite\Buncha_Scrubs\Buncha_Scrubs\obj\Debug\Buncha_Scrubs.csprojResolveAssemblyReference.cache
