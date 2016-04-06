@@ -10,6 +10,11 @@
     <link rel="stylesheet" type="text/css" href="Content/custom.css" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#myCarousel").carousel();
+        });
+    </script>
 </head>
 <body>
     
@@ -38,17 +43,46 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-
-        <div id="Content_Area"></div>
-
+          </nav>
+    
+<div class="container-fluid">
+        
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Carousel indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>   
+    <!-- Wrapper for carousel items -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="Prints/AW16 1.jpeg" alt="First Slide" />
+        </div>
+        <div class="item">
+            <img src="Prints/AW16 2.jpeg" alt="Second Slide" />
+        </div>
+        <div class="item">
+            <img src="Prints/AW16 3.jpeg" alt="Third Slide" />
+        </div>
+    </div>
+    <!-- Carousel controls -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+    </div>
+</div>
+        <hr>
         <div class="row">
-            <div id="Footer" class="col-xs-12 col-xm-12 col-lg-12">
+            <div class="col-xs-12 col-xm-12 col-lg-12">
                 <footer>
-                    <p>Copyright 2016 Avery Bow Canada</p>
+                    <p>&copy;Copyright 2016 Avery Bow Canada</p>
                 </footer>
             </div>
         </div>
-
+       
 </body>
 </html>
