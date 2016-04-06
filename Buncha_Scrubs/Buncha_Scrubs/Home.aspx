@@ -10,6 +10,11 @@
     <link rel="stylesheet" type="text/css" href="Content/custom.css" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#myCarousel").carousel();
+        });
+    </script>
 </head>
 <body>
     
@@ -40,7 +45,7 @@
             </div>
           </nav>
     
-    <div class="container-fluid">
+<div class="container-fluid">
         
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Carousel indicators -->
@@ -52,13 +57,13 @@
     <!-- Wrapper for carousel items -->
     <div class="carousel-inner">
         <div class="item active">
-            <img src="Prints/AW16 1.png" alt="First Slide" />
+            <img src="Prints/AW16 1.jpeg" alt="First Slide" />
         </div>
         <div class="item">
-            <img src="Prints/AW16 2.png" alt="Second Slide" />
+            <img src="Prints/AW16 2.jpeg" alt="Second Slide" />
         </div>
         <div class="item">
-            <img src="Prints/AW16 3.png" alt="Third Slide" />
+            <img src="Prints/AW16 3.jpeg" alt="Third Slide" />
         </div>
     </div>
     <!-- Carousel controls -->
@@ -69,6 +74,7 @@
         <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
     </div>
+</div>
         <hr>
         <div class="row">
             <div class="col-xs-12 col-xm-12 col-lg-12">
@@ -77,6 +83,6 @@
                 </footer>
             </div>
         </div>
-    </div>   
+       
 </body>
 </html>
