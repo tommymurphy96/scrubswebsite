@@ -56,6 +56,7 @@ body p
     position: relative;
     width: 180px;
     height: 20px;
+    text-align:center;
    
 }
 
@@ -64,15 +65,21 @@ body p
    background-color:black;
     border: 3px solid black;
     padding-left: 10px;
+  
 }
 
 #Nav li ul li ul li
 {
-   background-color:black;
-    border: 3px solid black;
+   background-color:white;
+  
+   position:relative;
+   left:10.2em;
+   top:-1.4em;
+    border: 3px solid white;
     padding-left: 10px;
     display: block;
-    /*color:black;*/
+    z-index:0;
+    text-overflow:clip;
 }
 
 #Nav a:link, #Nav a:active, #Nav a:visited
