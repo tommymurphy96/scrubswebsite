@@ -61,21 +61,30 @@ body p
 
 #Nav li ul li
 {
-   
+   background-color:black;
     border: 3px solid black;
     padding-left: 10px;
+}
+
+#Nav li ul li ul li
+{
+   background-color:black;
+    border: 3px solid black;
+    padding-left: 10px;
+    display: block;
+    /*color:black;*/
 }
 
 #Nav a:link, #Nav a:active, #Nav a:visited
 {
     display: block;
-    color:#fff;
+    color:white;
     text-decoration: none;
 }
 
 #Nav a:hover
 {
-    color: #E3E3E3;
+    color: #dedede;
 }
 
 
@@ -97,5 +106,12 @@ body p
     text-align: center;
     color: #fff;
     text-shadow: 0.1em 0.1em #333;
+}
+#divfix 
+{
+    bottom:0;
+    right:0;
+    position:absolute;
+    z-index:3000;
 }
 
