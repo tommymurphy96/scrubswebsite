@@ -1,87 +1,117 @@
 ﻿body 
 {
-    /*font-family: 'lucida grande' ,tahoma,verdana,arial,sans-serif;
-    background-color: #e9e9e9;*/
+    font-family: 'lucida grande' ,tahoma,verdana,arial,sans-serif;
+    background-color: #e9e9e9;
 }
+body p
+{
+    font-size: 0.8em;
+    line-height: 1.28;
+}
+
 #Wrapper
 {
-    /*width: 1080px;
+    width: 1130px;
     background-color: white;
     margin: 0 auto;
     padding: 10px;
-    border: 5px solid #dedede;*/  
+    border: 5px solid #dedede;
 }
 #Header 
 {
-    /*height: 200px;
-    border: 3px solid #E3E3E3;*/
+    height: 200px;
+    border: 3px solid #E3E3E3;
 }
 #NavigationBar 
 {
-     /*height: 60px;
+    height: 30px;
     border: 3px solid #E3E3E3;
     margin-top: 20px;
-    text-shadow: 0.1em 0.1em #333;*/
+    /*text-shadow: 0.1em 0.1em #333;*/
+    background-color:black
 }
 #Nav 
 {
-    /*list-style: none;*/
+    list-style: none;
+    margin-top:5px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:0px;
 }
 
 #Nav ul
 {
-    /*list-style: none;
+    list-style: none;
     margin: 0;
     padding: 0;
     width: auto;
-    display: none;*/
+    display: none;
 }
 
 #Nav li
 {
-    /*font-size: 24px;
+    font-size: 18px;
     float: left;
     position: relative;
     width: 180px;
-    height: 50px;*/
+    height: 20px;
+   
 }
 
 #Nav li ul li
 {
-   
-    /*border: 3px solid black;
-    padding-left: 10px;*/
+   background-color:black;
+    border: 3px solid black;
+    padding-left: 10px;
+}
+
+#Nav li ul li ul li
+{
+   background-color:black;
+    border: 3px solid black;
+    padding-left: 10px;
+    display: block;
+    /*color:black;*/
 }
 
 #Nav a:link, #Nav a:active, #Nav a:visited
 {
-    /*display: block;
-    color:#fff;
-    text-decoration: none;*/
+    display: block;
+    color:white;
+    text-decoration: none;
 }
 
 #Nav a:hover
 {
-    /*color: #E3E3E3;*/
+    color: #dedede;
 }
 
 
 #Conetent_Area 
 {
-    /*height: 100px;
+    float: left;
     width: 750px;
     margin: 20px 0 20px 0;
-    padding: 10px;*/
+    padding: 10px;
+
 }
 #Footer 
 {
-    /*clear: both;
+    clear: both;
     width: auto;
-    height: 5px;
+    height: 40px;
     padding: 10px;
     border: 3px solid #E3E3E3;
     text-align: center;
     color: #fff;
-    text-shadow: 0.1em 0.1em #333;*/
+    text-shadow: 0.1em 0.1em #333;
+}
+#divfix 
+{
+    bottom:0;
+    right:0;
+    position:absolute;
+    z-index:3000;
 }
 
