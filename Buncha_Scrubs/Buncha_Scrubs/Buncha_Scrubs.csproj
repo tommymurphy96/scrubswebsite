@@ -76,6 +76,7 @@
     <Content Include="Prints\AW16 6.jpeg" />
     <Content Include="Prints\AW16 7.jpeg" />
     <Content Include="Prints\AW16 8.jpeg" />
+    <Content Include="Scripts\typings\Headroom\headroom.d.ts" />
     <Content Include="WebForm7.aspx" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Prints\AW16 1.jpeg" />

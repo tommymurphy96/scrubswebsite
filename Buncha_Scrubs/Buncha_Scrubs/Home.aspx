@@ -10,21 +10,44 @@
     <link rel="stylesheet" type="text/css" href="Content/custom.css" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
-    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href="Style/Main.css" rel="stylesheet" />
     <script type="text/javascript">
         $(document).ready(function () {
             $("#myCarousel").carousel();
         });
     </script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(window).scroll(function () {
+                //if you hard code, then use console
+                //.log to determine when you want the 
+                //nav bar to stick.  
+                console.log($(window).scrollTop())
+                if ($(window).scrollTop() > 280) {
+                    $('#myNavBar').addClass('navbar-fixed');
+                }
+                if ($(window).scrollTop() < 281) {
+                    $('#myNavBar').removeClass('navbar-fixed');
+                }
+            });
+        });
+    </script>
+
     
 
 </head>
 <body>
-<div id="divfix">
-<img src="Logo/main logo.png"/>   
-</div>
-    <nav id="myNavBar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
+    <div id="banner">
+    <header class="nav-down">
+        <img src="Logo/main logo.png"/>
+    </header>
+    </div>
+
+    <nav id="myNavBar" class="navbar navbar-default navbar-inverse" role="navigation">
+        <div class="container-fluid">            
             <div id="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -76,19 +99,19 @@
                     <img src="Prints/AW16 3.jpeg" alt="Third Slide" />
                 </div>
                 <div class="item">
-                    <img src="Prints/AW16 4.jpeg" alt="Third Slide" />
+                    <img src="Prints/AW16 4.jpeg" alt="Fourth Slide" />
                 </div>
                 <div class="item">
-                    <img src="Prints/AW16 5.jpeg" alt="Third Slide" />
+                    <img src="Prints/AW16 5.jpeg" alt="Fifth Slide" />
                 </div>
                 <div class="item">
-                    <img src="Prints/AW16 6.jpeg" alt="Third Slide" />
+                    <img src="Prints/AW16 6.jpeg" alt="Sixth Slide" />
                 </div>
                 <div class="item">
-                    <img src="Prints/AW16 7.jpeg" alt="Third Slide" />
+                    <img src="Prints/AW16 7.jpeg" alt="Seventh Slide" />
                 </div>
                 <div class="item">
-                    <img src="Prints/AW16 8.jpeg" alt="Third Slide" />
+                    <img src="Prints/AW16 8.jpeg" alt="Eighth Slide" />
                 </div>
             </div>
             <!-- Carousel controls -->
