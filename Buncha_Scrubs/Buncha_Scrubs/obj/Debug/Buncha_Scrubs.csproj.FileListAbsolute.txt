@@ -7,3 +7,4 @@ C:\Users\gangwani4639\Documents\GitHub\scrubswebsite\Buncha_Scrubs\Buncha_Scrubs
 C:\Users\gangwani4639\Documents\GitHub\scrubswebsite\Buncha_Scrubs\Buncha_Scrubs\obj\Debug\Buncha_Scrubs.csprojResolveAssemblyReference.cache
 C:\Users\gangwani4639\Documents\GitHub\scrubswebsite\Buncha_Scrubs\Buncha_Scrubs\obj\Debug\Buncha_Scrubs.dll
 C:\Users\gangwani4639\Documents\GitHub\scrubswebsite\Buncha_Scrubs\Buncha_Scrubs\obj\Debug\Buncha_Scrubs.pdb
+C:\Users\dupuis1439\Documents\GitHub\scrubswebsite\Buncha_Scrubs\Buncha_Scrubs\obj\Debug\Buncha_Scrubs.csprojResolveAssemblyReference.cache

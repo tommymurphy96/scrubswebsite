@@ -16,6 +16,7 @@
             $("#myCarousel").carousel();
         });
     </script>
+    
 
 </head>
 <body>
@@ -68,6 +69,21 @@
                 </div>
                 <div class="item">
                     <img src="Prints/AW16 3.jpeg" alt="Third Slide" />
+                </div>
+                <div class="item">
+                    <img src="Prints/AW16 4.jpeg" alt="Third Slide" />
+                </div>
+                <div class="item">
+                    <img src="Prints/AW16 5.jpeg" alt="Third Slide" />
+                </div>
+                <div class="item">
+                    <img src="Prints/AW16 6.jpeg" alt="Third Slide" />
+                </div>
+                <div class="item">
+                    <img src="Prints/AW16 7.jpeg" alt="Third Slide" />
+                </div>
+                <div class="item">
+                    <img src="Prints/AW16 8.jpeg" alt="Third Slide" />
                 </div>
             </div>
             <!-- Carousel controls -->
