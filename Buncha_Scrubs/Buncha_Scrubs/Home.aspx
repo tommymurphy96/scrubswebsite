@@ -18,7 +18,7 @@
         });
     </script>
 
-    <script>
+    <script type="text/javascript">
         $(document).ready(function () {
 
             $(window).scroll(function () {
@@ -41,7 +41,7 @@
 </head>
 <body>
     <div id="banner">
-    <header class="nav-down">
+    <header>
         <img src="Logo/main logo.png"/>
     </header>
     </div>
