@@ -17,35 +17,17 @@
             $("#myCarousel").carousel();
         });
     </script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-
-            $(window).scroll(function () {
-                alert("Hi");
-                //console.log($(window).scrollTop())
-                //if ($(window).scrollTop() > 280) {
-                //    alert("Hi");
-                //    $('#myNavBar').addClass('navbar-fixed');
-                //}
-                //if ($(window).scrollTop() < 281) {
-                //    $('#myNavBar').removeClass('navbar-fixed');
-                //}
-            });
-        });
-    </script>
-
     
 
 </head>
 <body>
-    <div id="banner">
-    <header>
+
+    <header class="">
         <img src="Logo/main logo.png"/>
     </header>
-    </div>
+    
 
-    <nav id="myNavBar" class="navbar navbar-default navbar-inverse" role="navigation">
+    <nav id="myNavBar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">            
             <div id="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
