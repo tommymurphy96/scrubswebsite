@@ -19,6 +19,7 @@ body p
 }
 #Header 
 {
+    position:fixed;
     height: 200px;
     border: 3px solid #E3E3E3;
 }
@@ -30,16 +31,18 @@ body p
     /*text-shadow: 0.1em 0.1em #333;*/
     background-color:black
 }
-#Nav 
-{
-    list-style: none;
-    margin-top:5px;
-    text-align: center;
-    margin-left:auto;
-    margin-right:auto;
-    padding-left:0px;
+
+#navWrap {
+
+   height: 30px;
+
 }
 
+#nav {
+
+   padding: 5px;   
+
+}
 #Nav ul
 {
     list-style: none;
@@ -114,6 +117,8 @@ body p
     color: #fff;
     text-shadow: 0.1em 0.1em #333;
 }
+
+
 
 
 

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BunchaScrubs {
+namespace Buncha_Scrubs {
     
     
     public partial class Master {

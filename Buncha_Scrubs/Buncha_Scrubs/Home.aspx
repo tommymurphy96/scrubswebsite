@@ -11,49 +11,106 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
     <link href="Style/Main.css" rel="stylesheet" />
-    <script type="text/javascript">
+   
+     <script type="text/javascript">
         $(document).ready(function () {
             $("#myCarousel").carousel();
         });
     </script>
-    
+
+    <script type='text/javascript'>
+
+        $(function () {
+
+            // Stick the #nav to the top of the window
+
+            var nav = $('#nav');
+
+            var navHomeY = nav.offset().top;
+
+            var isFixed = false;
+
+            var $w = $(window);
+
+            $w.scroll(function () {
+
+                var scrollTop = $w.scrollTop();
+
+                var shouldBeFixed = scrollTop > navHomeY;
+
+                if (shouldBeFixed && !isFixed) {
+
+                    nav.css({
+
+                        position: 'fixed',
+
+                        top: 0,
+
+                        left: nav.offset().left,
+
+                        width: nav.width()
+
+                    });
+
+                    isFixed = true;
+
+                }
+
+                else if (!shouldBeFixed && isFixed) {
+
+                    nav.css({
+
+                        position: 'static'
+
+                    });
+
+                    isFixed = false;
+
+                }
+
+            });
+
+        });
+
+</script>
 
 </head>
+
 <body>
-
-    <header class="">
-        <img src="Logo/main logo.png"/>
-    </header>
-    
-
-    <nav id="myNavBar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container-fluid">            
-            <div id="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Avery Bow</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="Home.aspx">Home</a></li>
-                    <li><a href="Collection.aspx">Collection</a></li>
-                    <li><a href="Catalog.aspx">Catalog</a></li>
-                    <li><a href="Video.aspx">Video</a></li>
-                    <li><a href="Connect.aspx">Connect</a></li>
-                    <li><a href="About.aspx">About</a></li>
-                </ul>
+    <div class="container-fluid">
+        <img src="Logo/main logo.png" />
+        <div id="navWrap">
+            <div id="nav">
+            <div class="container-fluid">
+                <div id="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Avery Bow</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="Home.aspx">Home</a></li>
+                        <li><a href="Collection.aspx">Collection</a></li>
+                        <li><a href="Catalog.aspx">Catalog</a></li>
+                        <li><a href="Video.aspx">Video</a></li>
+                        <li><a href="Connect.aspx">Connect</a></li>
+                        <li><a href="About.aspx">About</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </nav>
-    
+        </div>
+    </div>
+
     <div class="container-fluid">
 
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -113,6 +170,7 @@
             </footer>
         </div>
     </div>
-       
+
+     
 </body>
 </html>
