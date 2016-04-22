@@ -14,7 +14,37 @@
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
     <link href="Style/Main.css" rel="stylesheet" />
    
-     <script type="text/javascript">
+    <script type="text/javascript">
+<!--
+    // Customize the widget by editing the fields below
+    // All fields are required
+
+    // Your Feedity RSS feed URL
+    feedity_widget_feed = "https://feedity.com/yoursite/feedid.rss";
+
+    // Number of items to display in the widget
+    feedity_widget_numberofitems = "5";
+
+    // Show feed item description (values: yes or no)
+    feedity_widget_showdescription = "no";
+
+    // Show feed item published date (values: yes or no)
+    feedity_widget_showdate = "no";
+
+    // Widget box width (in px, pt, em, or %)
+    feedity_widget_width = "250px";
+
+    // Widget box background color in hex or by name (eg: #ffffff or white)
+    feedity_widget_backcolor = "#ffffff";
+
+    // Widget text & link color in hex or by name (eg: #000000 or black)
+    feedity_widget_fontcolor = "#000000";
+    //-->
+    </script>
+
+    <script type="text/javascript" src="https://feedity.com/js/widget.js"></script>
+
+    <script type="text/javascript">
         $(document).ready(function () {
             $("#myCarousel").carousel();
         });
@@ -162,7 +192,10 @@
         </div>
 
     </div>
-        <hr />
+
+    <a href="AB.xml"><img src="RSS Button/rss-button.gif" width="68" height="25" border="0" /></a>
+
+    <hr />
     <div class="row">
         <div class="col-xs-12 col-xm-12 col-lg-12">
             <footer>
