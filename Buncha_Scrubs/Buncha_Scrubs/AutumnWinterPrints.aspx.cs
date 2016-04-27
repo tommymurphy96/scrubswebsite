@@ -17,7 +17,7 @@ namespace Buncha_Scrubs
             XmlNodeList path = null;
             XmlNodeList link = null;
             XmlNodeList name = null;
-            string configFile = "M:\\scrubswebsite\\Buncha_Scrubs\\Buncha_Scrubs\\imagegallery.xml";
+            string configFile = "C:\\Users\\murphy2079\\Documents\\GitHub\\scrubswebsite\\Buncha_Scrubs\\Buncha_Scrubs\\imagegallery.xml";
             //string currentDir = Directory.GetCurrentDirectory();
             //string configFile = currentDir + "\\imagegallery.xml";
             int reports = 0;
@@ -37,7 +37,7 @@ namespace Buncha_Scrubs
             }
             catch (Exception ee)
             {
-                Response.Write("<script>alert("+ee+");</script>");
+                Response.Write("<!--"+ee+")-->");
             }
 
             for (int i = 0; i < reports; i++ )
