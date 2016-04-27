@@ -14,33 +14,6 @@
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
     <link href="Style/Main.css" rel="stylesheet" />
    
-    <script type="text/javascript">
-<!--
-    // Customize the widget by editing the fields below
-    // All fields are required
-
-    // Your Feedity RSS feed URL
-    feedity_widget_feed = "https://feedity.com/yoursite/feedid.rss";
-
-    // Number of items to display in the widget
-    feedity_widget_numberofitems = "5";
-
-    // Show feed item description (values: yes or no)
-    feedity_widget_showdescription = "no";
-
-    // Show feed item published date (values: yes or no)
-    feedity_widget_showdate = "no";
-
-    // Widget box width (in px, pt, em, or %)
-    feedity_widget_width = "250px";
-
-    // Widget box background color in hex or by name (eg: #ffffff or white)
-    feedity_widget_backcolor = "#ffffff";
-
-    // Widget text & link color in hex or by name (eg: #000000 or black)
-    feedity_widget_fontcolor = "#000000";
-    //-->
-    </script>
 
     <script type="text/javascript" src="https://feedity.com/js/widget.js"></script>
 
@@ -50,72 +23,14 @@
         });
     </script>
 
-    <script type='text/javascript'>
-
-        $(function () {
-
-            // Stick the #nav to the top of the window
-
-            var nav = $('#nav');
-
-            var navHomeY = nav.offset().top;
-
-            var isFixed = false;
-
-            var $w = $(window);
-
-            $w.scroll(function () {
-
-                var scrollTop = $w.scrollTop();
-
-                var shouldBeFixed = scrollTop > navHomeY;
-
-                if (shouldBeFixed && !isFixed) {
-
-                    nav.css({
-
-                        position: 'fixed',
-
-                        top: 0,
-
-                        left: nav.offset().left,
-
-                        width: nav.width()
-
-                    });
-
-                    isFixed = true;
-
-                }
-
-                else if (!shouldBeFixed && isFixed) {
-
-                    nav.css({
-
-                        position: 'static'
-
-                    });
-
-                    isFixed = false;
-
-                }
-
-            });
-
-        });
-
-</script>
-
 </head>
 
 <body>
-    <div class="container-fluid">
-        <img src="Logo/main logo.png" />
-        <div id="navWrap">
-            <div id="nav">
-            <div class="container-fluid">
-                <div id="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+    <div>
+    <div class="navbar navbar-default  navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -138,11 +53,11 @@
                 </div>
             </div>
         </div>
-        </div>
     </div>
 
-    <div class="container-fluid">
 
+    <div class="container-fluid">
+    <div class="col-lg-12 col-xs-12 col-md-12">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Carousel indicators -->
             <ol class="carousel-indicators">
@@ -190,10 +105,8 @@
                 <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
         </div>
-
     </div>
-
-    <a href="AB.xml"><img src="RSS Button/rss-button.gif" width="68" height="25" border="0" /></a>
+    </div>
 
     <hr />
     <div class="row">
