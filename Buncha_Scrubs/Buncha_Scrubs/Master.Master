@@ -44,14 +44,13 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
 </head>
 <body>
 
 
  <form id="form1" runat="server">
    <%-- <div>--%>
+      <asp:ContentPlaceHolder ID="Header" runat="server">
     <header class="site-header" role="banner">
         <div class="header-bottom">
             <div class="container">
@@ -104,6 +103,9 @@
             </div>
         </div>
     </header>
+    </asp:ContentPlaceHolder>
+
+      <asp:ContentPlaceHolder ID="Carousel" runat="server">
     <!--Carousel-->
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -146,7 +148,9 @@
   </a>
   </div>
   <!--Carousel-->
+  </asp:ContentPlaceHolder>
   <%--</div>--%>
+  <asp:ContentPlaceHolder ID="MiddleContents" runat="server">
   <br />
   <!-- Middle Contents -->
     <br />
@@ -176,7 +180,8 @@
         </div>
     </div>
   <!-- Middle Contents -->
-
+ </asp:ContentPlaceHolder>
+ <asp:ContentPlaceHolder ID="Footer" runat="server">
   <!-- footer -->
         <footer class="site-footer  panel-footer" role="contentinfo">
         <div class="container">
@@ -194,10 +199,10 @@
         </footer>
           
   <!-- footer -->
-
+    </asp:ContentPlaceHolder>
    </form>
-
-<form id="test-form" class="white-popup-block mfp-hide">
+ <asp:ContentPlaceHolder ID="ContactButton" runat="server">
+ <form id="test-form" class="white-popup-block mfp-hide">
   <h1>Form</h1>
   <fieldset style="border:0;">
     <ol>
@@ -223,7 +228,6 @@
     </ol>
   </fieldset>
 </form>
-
 <script type="text/javascript">
     $(document).ready(function () {
         $('.popup-with-form').magnificPopup({
@@ -245,5 +249,6 @@
         });
     });
 </script>
+</asp:ContentPlaceHolder>
 </body>
 </html>
