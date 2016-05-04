@@ -58,7 +58,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="Home.aspx"><img alt="Logo" src="Images/candian bowtie.png" height="30" /></a>
+                <a class="navbar-brand" href="Default.aspx"><img alt="Logo" src="Images/candian bowtie.png" height="30" /></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-left">

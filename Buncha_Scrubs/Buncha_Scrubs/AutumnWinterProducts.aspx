@@ -62,7 +62,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-left">
-                    <li class="active"><a href="Home.aspx">Home</a></li>
+                    <li class="active"><a href="Default.aspx">Home</a></li>
                      <li class="dropdown">
                         <a href="#" class="dropdown-toggle dropdown test" data-toggle="dropdown">Collection<span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -104,7 +104,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                 <img src='<%#Eval("Path")%>' />
                 <br />
-                <a href='<%#Eval("Link")%>'>shopifybtn here</a>
+                <a href='<%#Eval("Link")%>'>kickstarterbtn here</a>
                 </div>
             </ItemTemplate>
         </asp:Repeater>

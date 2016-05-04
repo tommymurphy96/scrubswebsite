@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Buncha_Scrubs
 {
-    public partial class WebForm5 : System.Web.UI.Page
+    public partial class WebForm3 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
