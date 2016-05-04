@@ -10,15 +10,15 @@ using System.Data;
 
 namespace Buncha_Scrubs
 {
-    public partial class AutumnWinterPrints : System.Web.UI.Page
+    public partial class SpringSummerPrints : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             XmlNodeList path = null;
             XmlNodeList link = null;
             XmlNodeList name = null;
-           // string configFile = "C:\\Users\\murphy2079\\Documents\\GitHub\\scrubswebsite\\Buncha_Scrubs\\Buncha_Scrubs\\imagegallery.xml";
-            string configFile = Server.MapPath("AutomnWinterPrints.xml"); // Directory.GetCurrentDirectory();
+            // string configFile = "C:\\Users\\murphy2079\\Documents\\GitHub\\scrubswebsite\\Buncha_Scrubs\\Buncha_Scrubs\\imagegallery.xml";
+            string configFile = Server.MapPath("SpringSummerPrints.xml"); // Directory.GetCurrentDirectory();
             //string configFile = currentDir + "\\imagegallery.xml";
             int reports = 0;
             List<GalleryObject> galleryImages = new List<GalleryObject>();
@@ -37,31 +37,16 @@ namespace Buncha_Scrubs
             }
             catch (Exception ee)
             {
-                Response.Write("<!--"+ee+")-->");
+                Response.Write("<!--" + ee + ")-->");
             }
 
-            for (int i = 0; i < reports; i++ )
+            for (int i = 0; i < reports; i++)
             {
                 galleryImages.Add(new GalleryObject(path[i].InnerText, link[i].InnerText, name[i].InnerText));
             }
 
             rptGallery.DataSource = galleryImages;
             rptGallery.DataBind();
-        }
-    }
-
-    class GalleryObject
-    {
-        public string Path { get; set; }
-        public string Link { get; set; }
-        public string Name { get; set; }
-
-        public GalleryObject() { }
-        public GalleryObject(string path, string link, string name) 
-        {
-            Path = path;
-            Link = link;
-            Name = name;
         }
     }
 }
