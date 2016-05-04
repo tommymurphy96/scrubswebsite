@@ -62,7 +62,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-left">
-                    <li class="active"><a href="Home.aspx">Home</a></li>
+                    <li class="active"><a href="Default.aspx">Home</a></li>
                      <li class="dropdown">
                         <a href="#" class="dropdown-toggle dropdown test" data-toggle="dropdown">Collection<span class="caret"></span></a>
                         <ul class="dropdown-menu">

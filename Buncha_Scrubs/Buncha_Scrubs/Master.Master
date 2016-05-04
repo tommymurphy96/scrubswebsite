@@ -95,19 +95,9 @@
                                     <li><a href="SpringSummerProducts.aspx">Products</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Video</a></li>
-                            <li class="dropdown1">
-                                <a href="#" class="dropdown-toggle dropdown1 test1" data-toggle="dropdown">Connect<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Facebook</a></li>
-                                    <li><a href="#">Instagram</a></li>
-                                    <li><a href="#">Snapchat</a></li>
-                                    <li><a href="#">Twitter</a></li>
-                                    <li><a href="#">Weibo</a></li>
-                                    <li><a href="#">Youtube</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="Video.aspx">Video</a></li>
+                           <li><a href="Connect.aspx">Connect</a></li>
+                            <li><a href="About.aspx">About</a></li>
                         </ul>
                     </div>
                 </div>

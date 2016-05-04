@@ -97,6 +97,8 @@
     <Content Include="css\bootstrap-theme.min.css.map" />
     <Content Include="css\bootstrap.css.map" />
     <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="Video.aspx" />
+    <Content Include="Connect.aspx" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Prints\AW16 1.jpeg" />
     <Content Include="Prints\AW16 2.jpeg" />
@@ -107,8 +109,6 @@
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Web.config" />
-    <Content Include="Video.aspx" />
-    <Content Include="Connect.aspx" />
     <Content Include="About.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -148,20 +148,6 @@
     <Compile Include="SpringSummerPrints.aspx.designer.cs">
       <DependentUpon>SpringSummerPrints.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Video.aspx.cs">
-      <DependentUpon>Video.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Video.aspx.designer.cs">
-      <DependentUpon>Video.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Connect.aspx.cs">
-      <DependentUpon>Connect.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Connect.aspx.designer.cs">
-      <DependentUpon>Connect.aspx</DependentUpon>
-    </Compile>
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -175,6 +161,20 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Video.aspx.cs">
+      <DependentUpon>Video.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Video.aspx.designer.cs">
+      <DependentUpon>Video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connect.aspx.cs">
+      <DependentUpon>Connect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Connect.aspx.designer.cs">
+      <DependentUpon>Connect.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
