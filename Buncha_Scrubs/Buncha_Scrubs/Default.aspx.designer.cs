@@ -11,7 +11,7 @@ namespace Buncha_Scrubs
 {
 
 
-    public partial class WebForm7
+    public partial class WebForm1
     {
     }
 }

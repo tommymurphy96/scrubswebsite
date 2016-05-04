@@ -80,19 +80,19 @@
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-left">
-                            <li class="active"><a href="Home.aspx">Home</a></li>
+                            <li class="active"><a href="Default.aspx">Home</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle dropdown test" data-toggle="dropdown">Collection<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown-header">Autumn/WInter 2016</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="#">Prints</a></li>
-                                    <li><a href="#">Products</a></li>
+                                    <li><a href="AutumnWinterPrints.aspx">Prints</a></li>
+                                    <li><a href="AutumnWinterProducts.aspx">Products</a></li>
                                     <li role="separator" class="divider"></li>
                                     <li class="dropdown-header">Spring/Summer 2017</li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="#">Prints</a></li>
-                                    <li><a href="#">Products</a></li>
+                                    <li><a href="SpringSummerPrints.aspx">Prints</a></li>
+                                    <li><a href="SpringSummerProducts.aspx">Products</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Video</a></li>
