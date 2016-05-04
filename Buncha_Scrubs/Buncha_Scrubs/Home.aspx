@@ -14,105 +14,87 @@
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
     <link href="Style/Main.css" rel="stylesheet" />
    
-     <script type="text/javascript">
+
+    <script type="text/javascript" src="https://feedity.com/js/widget.js"></script>
+
+    <script type="text/javascript">
         $(document).ready(function () {
             $("#myCarousel").carousel();
         });
     </script>
-
-    <script type='text/javascript'>
-
-        $(function () {
-
-            // Stick the #nav to the top of the window
-
-            var nav = $('#nav');
-
-            var navHomeY = nav.offset().top;
-
-            var isFixed = false;
-
-            var $w = $(window);
-
-            $w.scroll(function () {
-
-                var scrollTop = $w.scrollTop();
-
-                var shouldBeFixed = scrollTop > navHomeY;
-
-                if (shouldBeFixed && !isFixed) {
-
-                    nav.css({
-
-                        position: 'fixed',
-
-                        top: 0,
-
-                        left: nav.offset().left,
-
-                        width: nav.width()
-
-                    });
-
-                    isFixed = true;
-
-                }
-
-                else if (!shouldBeFixed && isFixed) {
-
-                    nav.css({
-
-                        position: 'static'
-
-                    });
-
-                    isFixed = false;
-
-                }
-
+    <script>
+        $(document).ready(function () {
+            $(".dropdown").on("hide.bs.dropdown", function () {
+                $(".test").html('Collection <span class="caret"></span>');
+            });
+            $(".dropdown").on("show.bs.dropdown", function () {
+                $(".test").html('Collection <span class="caret caret-up"></span>');
             });
 
+            $(".dropdown1").on("hide.bs.dropdown", function () {
+                $(".test1").html('Connect <span class="caret"></span>');
+            });
+            $(".dropdown1").on("show.bs.dropdown", function () {
+                $(".test1").html('Connect <span class="caret caret-up"></span>');
+            });
         });
-
-</script>
+    </script>
 
 </head>
 
 <body>
-    <div class="container-fluid">
-        <img src="Logo/main logo.png" />
-        <div id="navWrap">
-            <div id="nav">
-            <div class="container-fluid">
-                <div id="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Avery Bow</a>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="Home.aspx">Home</a></li>
-                        <li><a href="Collection.aspx">Collection</a></li>
-                        <li><a href="Catalog.aspx">Catalog</a></li>
-                        <li><a href="Video.aspx">Video</a></li>
-                        <li><a href="Connect.aspx">Connect</a></li>
-                        <li><a href="About.aspx">About</a></li>
-                    </ul>
-                </div>
+
+    <div class="navbar navbar-default  navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Home.aspx"><img alt="Logo" src="Images/candian bowtie.png" height="30" /></a>
             </div>
-        </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active"><a href="Home.aspx">Home</a></li>
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle dropdown test" data-toggle="dropdown">Collection<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">Autumn/WInter 2016</li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Prints</a></li>
+                            <li><a href="#">Products</a></li>
+                             <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Spring/Summer 2017</li>
+                             <li role="separator" class="divider"></li>
+                            <li><a href="#">Prints</a></li>
+                            <li><a href="#">Products</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Video</a></li>
+                    <li class="dropdown1">
+                        <a href="#" class="dropdown-toggle dropdown1 test1" data-toggle="dropdown">Connect<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Snapchat</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Weibo</a></li>
+                            <li><a href="#">Youtube</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a></li>
+               </ul>
+            </div>
         </div>
     </div>
 
-    <div class="container-fluid">
 
+    <div class="container-fluid">
+    <div class="col-lg-12 col-xs-12 col-md-12">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Carousel indicators -->
             <ol class="carousel-indicators">
@@ -160,9 +142,10 @@
                 <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
         </div>
-
     </div>
-        <hr />
+    </div>
+    
+    <hr />
     <div class="row">
         <div class="col-xs-12 col-xm-12 col-lg-12">
             <footer>
