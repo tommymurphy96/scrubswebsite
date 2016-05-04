@@ -104,7 +104,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                 <img src='<%#Eval("Path")%>' />
                 <br />
-                <a href='<%#Eval("Link")%>'>shopifybtn here</a>
+                <a href='<%#Eval("Link")%>'>kickstarterbtn here</a>
                 </div>
             </ItemTemplate>
         </asp:Repeater>
