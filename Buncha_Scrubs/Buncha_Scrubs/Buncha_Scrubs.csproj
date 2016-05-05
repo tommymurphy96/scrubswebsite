@@ -65,6 +65,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="AutumnWinterProducts.aspx" />
     <Content Include="AutomnWinterProducts.xml" />
+    <Content Include="Login.aspx" />
     <Content Include="SpringSummerProducts.aspx" />
     <Content Include="SpringSummerProducts.xml" />
     <Content Include="SpringSummerPrints.xml" />
@@ -133,6 +134,13 @@
     </Compile>
     <Compile Include="AutumnWinterProducts.aspx.designer.cs">
       <DependentUpon>AutumnWinterProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="SpringSummerProducts.aspx.cs">
       <DependentUpon>SpringSummerProducts.aspx</DependentUpon>
