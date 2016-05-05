@@ -65,6 +65,19 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="AutumnWinterProducts.aspx" />
     <Content Include="AutomnWinterProducts.xml" />
+    <Content Include="Images\AW16 1.jpeg" />
+    <Content Include="Images\AW16 2.jpeg" />
+    <Content Include="Images\AW16 3.jpeg" />
+    <Content Include="Images\AW16 4.jpeg" />
+    <Content Include="Images\AW16 5.jpeg" />
+    <Content Include="Images\AW16 6.jpeg" />
+    <Content Include="Images\AW16 7.jpeg" />
+    <Content Include="Images\AW16 8.jpeg" />
+    <Content Include="Images\candian bowtie.png" />
+    <Content Include="Images\chat.png" />
+    <Content Include="Images\gotop.png" />
+    <Content Include="Images\main logo.png" />
+    <Content Include="Images\up-arrow.png" />
     <Content Include="Login.aspx" />
     <Content Include="SpringSummerProducts.aspx" />
     <Content Include="SpringSummerProducts.xml" />
@@ -101,6 +114,7 @@
     <Content Include="css\bootstrap.min.css.map" />
     <Content Include="Video.aspx" />
     <Content Include="Connect.aspx" />
+    <Content Include="Images\Thumbs.db" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Prints\AW16 1.jpeg" />
     <Content Include="Prints\AW16 2.jpeg" />
