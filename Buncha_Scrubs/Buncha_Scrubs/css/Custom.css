@@ -126,10 +126,19 @@ a:-webkit-any-link {
   display: inline-block !important;
   float: none;
   margin: 0 0 0 0;
+  text-align:left;
+  
 }
+
+/*.navbar-collapse {
+  text-align:left;
+  display:none;
+  
+}*/
 .row {
     margin-right: -10px;
     margin-left: -10px;
+    
 }
 .header-logo {
     margin: 0px 0 22px;
@@ -249,4 +258,54 @@ a.back-to-top {
 }
 a:hover.back-to-top {
 	background-color: #000;
+}
+.FacebookImg {
+
+   height: 32px;
+   width: 32px;
+   float: right;
+}
+
+.TwitterImg {
+
+   height: 32px;
+   width: 32px;
+   float: right;
+}
+
+.InstaImg {
+
+   height: 32px;
+   width: 32px;
+   float: right;
+
+}
+
+.YoutubeImg {
+
+   height: 32px;
+   width: 32px;
+   float: right;
+
+}
+
+.WeeblyImg {
+
+   height: 32px;
+   width: 32px;
+   float: right;
+
+}
+
+.PinImg {
+
+   height: 32px;
+   width: 32px;
+   float: right;
+
+}
+
+.navbar-toggle {
+    text-align:left;
+    float:left;
 }
