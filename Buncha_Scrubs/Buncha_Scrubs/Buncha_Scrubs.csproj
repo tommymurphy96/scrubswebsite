@@ -75,8 +75,10 @@
     <Content Include="Images\AW16 8.jpeg" />
     <Content Include="Images\candian bowtie.png" />
     <Content Include="Images\chat.png" />
+    <Content Include="Images\FacebookIcon.png" />
     <Content Include="Images\gotop.png" />
     <Content Include="Images\main logo.png" />
+    <Content Include="Images\SimpleFb.ico" />
     <Content Include="Images\up-arrow.png" />
     <Content Include="Login.aspx" />
     <Content Include="SpringSummerProducts.aspx" />
