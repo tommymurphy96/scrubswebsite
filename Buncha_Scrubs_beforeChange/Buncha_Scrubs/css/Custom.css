@@ -1,0 +1,311 @@
+﻿body {
+}
+.center {
+    text-align:center;
+    word-wrap:break-word;
+}
+.carousel-inner {
+    height:375px;
+}
+.title {
+    width: 100%;
+    float: left;
+    text-align: center;
+    border-top: 1px solid #000;
+}
+.title h2{
+    font-weight:normal;
+    font-size:28px;
+    line-height: 35px;
+    background: #ffffff;
+    padding: 0 10px;
+    display: inline-block;
+    margin: 0 0 25px 0;
+    position: relative;
+    top: -21px;
+}
+/* Style to reverse the caret icon from pointing downwards to upwards */
+.caret.caret-up {
+    border-top-width: 0 !important;
+    border-bottom: 4px solid #fff !important;
+  }
+.row .block1 {
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+}
+.row .block1 img {
+    vertical-align: top;
+    margin: 0 0 20px 0;
+    width: 100%;
+    height:350px;
+}
+.row .block1 p {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.site-footer {
+    background: #141414;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+footer {
+    display: block;
+}
+
+.site-footer a, .footer-bottom address {
+    color: #969696;
+}
+a, a:link, a:hover, a:active {
+    outline: none;
+}
+/*a {
+    color: #000000;
+}
+a {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #000;
+}
+a {
+    color: #428bca;
+    text-decoration: none;
+}
+a {
+    background: transparent;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+}*/
+
+.header-bottom {
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -o-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    background: #ffffff;
+    padding-top: 20px;
+}
+.container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.header-panel {
+    clear: both;
+    text-align: center;
+}
+.header-logo a img {
+  height: 100px;
+  width: auto;
+}
+.navbar {
+    margin: 0 0 0 0;
+    border-radius: 0;
+}
+.navbar-nav {
+    text-align: center;
+    width: 100%;
+}
+.navbar-nav > li {
+  display: inline-block !important;
+  float: none;
+  margin: 0 0 0 0;
+  text-align:left;
+  
+}
+
+/*.navbar-collapse {
+  text-align:left;
+  display:none;
+  
+}*/
+.row {
+    margin-right: -10px;
+    margin-left: -10px;
+    
+}
+.header-logo {
+    margin: 0px 0 22px;
+}
+.col-xs-4 {
+    width: 33.33333333%;
+    float:left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.brand-logo {
+    padding-top:10px;
+    vertical-align:middle;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    -webkit-transition: all 250ms ease-in-out 0s;
+    -moz-transition: all 250ms ease-in-out 0s;
+    -ms-transition: all 250ms ease-in-out 0s;
+    -o-transition: all 250ms ease-in-out 0s;
+    transition: all 250ms ease-in-out 0s;
+    border: 0;
+}
+
+.container.center {
+    padding-bottom: 50px;
+}
+
+.footer address {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+#btn-new {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    box-shadow: 1px 1px 9px #222222;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: url(../Images/chat.png) no-repeat center center #222222;
+    color: #444;
+    cursor: pointer;
+    border: 0;
+    border-radius: 100%;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 1;
+    background-size: 25px auto;
+}
+
+#test-form h1 {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+#test-form ol li {
+    list-style-type: none;
+}
+#test-form ol li label {
+    display: block;
+    margin: 0 0 5px 0;
+    width: 100%;
+}
+#test-form ol li input ,
+#test-form ol li textarea{
+    border:1px solid #e4e4e4;
+    border-radius: 4px;
+    background: #f1f1f1;
+    width: 450px;
+    height: 35px;
+    box-sizing:border-box;
+    padding-left:20px; 
+}
+#test-form ol li textarea {
+    height: 90px;
+    padding-top: 5px;
+}
+#test-form ol li input[type="submit"]  {
+    background: #222;
+    border:none;
+    box-shadow: none;
+    -webkit-appearance:none;
+    text-transform: capitalize;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;  
+    color: #fff;
+}
+#test-form ol li input[type="submit"]:hover{
+    background: #4e4e4e;
+}
+
+a.back-to-top {
+	display: none;
+	width: 50px;
+	height: 50px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: -10px;
+	bottom: -11px;
+	background: url("../Images/up-arrow.png") no-repeat center 43%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+   
+}
+a:hover.back-to-top {
+	background-color: #000;
+}
+.FacebookImg {
+
+   height: 32px;
+   width: 32px;
+   float: right;
+}
+
+.TwitterImg {
+
+   height: 32px;
+   width: 32px;
+   float: right;
+}
+
+.InstaImg {
+
+   height: 32px;
+   width: 32px;
+   float: right;
+
+}
+
+.YoutubeImg {
+
+   height: 32px;
+   width: 32px;
+   float: right;
+
+}
+
+.WeeblyImg {
+
+   height: 32px;
+   width: 32px;
+   float: right;
+
+}
+
+.PinImg {
+
+   height: 32px;
+   width: 32px;
+   float: right;
+
+}
+
+.navbar-toggle {
+    text-align:left;
+    float:left;
+}
