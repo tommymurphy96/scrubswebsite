@@ -110,22 +110,21 @@
   <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
                   <div class="item active">
-                      <img src="Images/AW16 1.jpeg" alt="..."/>
-                      <div class="carousel-caption">
+                      <img class="displayed" src="Images/AW16 1.jpeg" alt="..." />
+                      
                           <h3>Image 1</h3>
-                      </div>
+           
                   </div>
                   <div class="item">
-                      <img src="Images/AW16 2.jpeg" alt="..."/>
-                      <div class="carousel-caption">
+                      <img class="displayed" src="Images/AW16 2.jpeg" alt="..."/>
+                     
                           <h3>Image 2</h3>
-                      </div>
                   </div>
                   <div class="item">
-                      <img src="Images/AW16 3.jpeg" alt="..."/>
-                      <div class="carousel-caption">
+                      <img class="displayed" src="Images/AW16 3.jpeg" alt="..."/>
+                      
                           <h3>Image 3</h3>
-                      </div>
+                      
                   </div>
               </div>
 

@@ -6,8 +6,24 @@
 }
 .carousel-inner {
     height:375px;
+  
 }
-.title {
+.carousel .item > img 
+{
+    padding-top:45px;
+    width:200px;    
+}
+
+img.displayed 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.title 
+{
     width: 100%;
     float: left;
     text-align: center;
@@ -175,10 +191,6 @@ a:-webkit-any-link {
     text-align: center;
     margin-top: 20px;
 }
-
-
-
-
 #btn-new {
     position: fixed;
     bottom: 40px;
