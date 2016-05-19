@@ -13,16 +13,16 @@ namespace Buncha_Scrubs
         protected void Page_PreRender(object sender, EventArgs e)
         {
 
-            DirectoryInfo dir = new DirectoryInfo(MapPath("~/Prints/"));
-            dlstImage.DataSource = dir.GetFiles();
-            dlstImage.DataBind();
+            //DirectoryInfo dir = new DirectoryInfo(MapPath("~/Images/"));
+            //dlstImage.DataSource = dir.GetFiles();
+            //dlstImage.DataBind();
 
-            String fileName = Request.QueryString["fileToDelete"];
-            if (fileName != null)
-            {
-                File.Delete(dir + fileName);
-                Response.Redirect("Admin.aspx");
-            }
+            //String fileName = Request.QueryString["fileToDelete"];
+            //if (fileName != null)
+            //{
+            //    File.Delete(dir + fileName);
+            //    Response.Redirect("Admin.aspx");
+            //}
         }
 
         private bool CheckFileType(string fileName)
@@ -44,13 +44,24 @@ namespace Buncha_Scrubs
 
         }
 
-        protected void btnSave_Click(object sender, EventArgs e)
+        //protected void btnSave_Click(object sender, EventArgs e)
+        //{
+        //    string filePath = "~/Images/" + fupUpload.FileName;
+
+        //    if (CheckFileType(filePath))
+        //    {
+        //        fupUpload.SaveAs(MapPath(filePath));
+        //    }
+
+        //}
+
+        protected void btnSaveBanner_Click(object sender, EventArgs e)
         {
-            string filePath = "~/Prints/" + fupUpload.FileName;
+            string filePath = "~/Images/" + bannerUpload.FileName;
 
             if (CheckFileType(filePath))
             {
-                fupUpload.SaveAs(MapPath(filePath));
+                bannerUpload.SaveAs(MapPath(filePath));
             }
 
         }
