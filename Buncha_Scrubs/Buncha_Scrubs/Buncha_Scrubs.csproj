@@ -120,9 +120,10 @@
     <Content Include="css\bootstrap-theme.min.css.map" />
     <Content Include="css\bootstrap.css.map" />
     <Content Include="css\bootstrap.min.css.map" />
-    <Content Include="Video.aspx" />
-    <Content Include="Connect.aspx" />
     <Content Include="Images\Thumbs.db" />
+    <Content Include="BowTies.aspx" />
+    <Content Include="Tops.aspx" />
+    <Content Include="Accessories.aspx" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Prints\AW16 1.jpeg" />
     <Content Include="Prints\AW16 2.jpeg" />
@@ -200,19 +201,26 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Video.aspx.cs">
-      <DependentUpon>Video.aspx</DependentUpon>
+    <Compile Include="BowTies.aspx.cs">
+      <DependentUpon>BowTies.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Video.aspx.designer.cs">
-      <DependentUpon>Video.aspx</DependentUpon>
+    <Compile Include="BowTies.aspx.designer.cs">
+      <DependentUpon>BowTies.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Connect.aspx.cs">
-      <DependentUpon>Connect.aspx</DependentUpon>
+    <Compile Include="Tops.aspx.cs">
+      <DependentUpon>Tops.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Connect.aspx.designer.cs">
-      <DependentUpon>Connect.aspx</DependentUpon>
+    <Compile Include="Tops.aspx.designer.cs">
+      <DependentUpon>Tops.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accessories.aspx.cs">
+      <DependentUpon>Accessories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accessories.aspx.designer.cs">
+      <DependentUpon>Accessories.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
