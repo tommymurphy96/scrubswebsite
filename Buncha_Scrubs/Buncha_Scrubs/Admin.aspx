@@ -24,7 +24,13 @@
 
     </div>--%>
         <p>HOMEPAGE BANNER</p>
-        <asp:FileUpload ID="bannerUpload" runat="server" /> &nbsp<asp:Button ID="btnSaveBanner" runat="server" Text="Upload" OnClick="btnSave_Click" />
+        <asp:FileUpload ID="bannerUpload" runat="server" /> &nbsp<asp:Button ID="btnSaveBanner" runat="server" Text="Upload" OnClick="btnSaveBanner_Click" />
+
+        <p>SHOP THIS BANNER</p>
+        <asp:FileUpload ID="shopThisUpload" runat="server" /> &nbsp<asp:Button ID="btnSaveShop" runat="server" Text="Upload" OnClick="btnSaveShop_Click" />
+
+        <p>COLLECTION BANNER</p>
+        <asp:FileUpload ID="collectionUpload" runat="server" /> &nbsp<asp:Button ID="btnSaveCollection" runat="server" Text="Upload" OnClick="btnSaveCollection_Click" />
     </form>
 </body>
 </html>
