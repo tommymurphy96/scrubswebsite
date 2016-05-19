@@ -14,6 +14,11 @@
     width:200px;    
 }
 
+.carousel .item .img > h3 
+{
+    text-align:center;
+}
+
 img.displayed 
 {
     display: block;
