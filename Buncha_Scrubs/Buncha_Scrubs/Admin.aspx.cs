@@ -57,7 +57,9 @@ namespace Buncha_Scrubs
 
         protected void btnSaveBanner_Click(object sender, EventArgs e)
         {
-            string filePath = "~/Images/" + bannerUpload.FileName;
+
+
+            string filePath = "~/Images/Banner" + bannerUpload.FileName.Substring(bannerUpload.FileName.LastIndexOf(".") -1);
 
             if (CheckFileType(filePath))
             {
