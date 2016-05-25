@@ -5,9 +5,38 @@
     word-wrap:break-word;
 }
 
-.container.banner 
+.container.banner1 
 {
     background: url(../Images/AW161.jpeg) no-repeat center center;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+}
+
+.container.banner2 .Left > .btn.btn-default 
+{
+    margin-top:150px;
+    background-color:#b915a6;
+    color:white;
+    font-size:14px;
+    width:200px;
+     border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.container.banner2 
+{
+    background: url(../Images/AW162.jpeg) no-repeat center center;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+}
+
+.container.banner3 
+{
+    background: url(../Images/AW163.jpeg) no-repeat center center;
     position: relative;
     width: 100%;
     height: 300px;
