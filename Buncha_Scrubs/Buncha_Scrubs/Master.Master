@@ -115,6 +115,10 @@
           </header>
     </asp:ContentPlaceHolder>
 <!--Header-->
+     <div class="container banner">
+        <div class="banner-data">        
+        </div>
+    </div>
       <asp:ContentPlaceHolder ID="Carousel" runat="server">
     <!--Carousel-->
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -128,7 +132,7 @@
   <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
                   <div class="item active">
-                      <img class="displayed" src="Images/AW16 1.jpeg" alt="..." />
+                      <img class="displayed" src="Images/AW161.jpeg" alt="..." />
                       
                           <h3>Image 1</h3>
            
