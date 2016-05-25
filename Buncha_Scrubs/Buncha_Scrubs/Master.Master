@@ -57,7 +57,7 @@
                       <div class="header-panel">
                           <div class="row">
                               <h1 class="header-logo col-xs-12"><a href="#">
-                                  <img id="brand-logo" src="Images/main logo.png" alt="Avery Bow" /> </a></h1>
+                                  <img id="brand-logo" src="Images/main logo.png" alt="Avery Bow" /></a></h1>
                           </div>
                       </div>
                   </div>
@@ -69,7 +69,7 @@
                               </button>
                               <a class="navbar-brand" href="Home.aspx"></a>
                           </div>
-                          <div class="navbar-collapse collapse  ">
+                          <div class="navbar-collapse collapse">
                               <ul class="nav navbar-nav">
                                   <li class="active"><a href="Default.aspx">Home</a></li>
                                   <li class="dropdown"><a href="#" class="dropdown-toggle test" data-toggle="dropdown">Collection<span class="caret"></span></a>
