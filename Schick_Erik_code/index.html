@@ -1,0 +1,198 @@
+<DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="animate.css">
+      <title>Erik Schick</title>
+      <meta charset="utf-8">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+      <script async defer 
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLc-fWqfuBE9BJguUE-Ua_z7BpbqoTouo&callback=initMap">
+      </script>
+      <script src="maps.js"></script>
+      <script src="sha256.js"></script>
+      <script src="controller.js"></script>
+  </head>
+  
+  <body ng-app="myApp">
+    <div ng-controller="appCtrl">
+        <script type="text/ng-template" id="page-songs">
+        <div class="{{(destPage == 'page-songs') ? 'activeView' : 'inactiveView'}}">
+            <h1>
+                <!-- Display the info from the database -->
+                <p>{{(songSelected == true)
+                ? "Info about " + song.title + " (id #" + song.id + "):"
+                : "No song currently selected"}}
+                </p>
+            </h1>
+            <form class="bodyBlock">
+              Title:<br><br>
+              <input type="text" ng-model="song.title" required><br><br>
+              Artist:<br><br>
+              <input type="text" ng-model="song.artist" required><br><br>
+              Tuning:<br><br>
+              <input type="text" ng-model="song.tuning" required><br><br>
+              Length:<br>{{song.length | secToMins}}<br>
+              <input type="number" ng-model="song.length" min="0" required><br><br>
+            </form>
+            <button ng-click="updateSong(song.id);">Update current entry</button>
+            <button ng-click="deleteSong(song.id);">Delete current entry</button><br><br>
+            <button ng-click="postNewSong();">Create as new entry</button>
+            <br><br><br>
+            
+            <div class="bodyBlock">
+                <div ng-repeat="entry in allSongs">
+                    <p><button ng-click="setSongID(entry.id);">{{entry.title}}</button></p>
+                </div>
+            </div>
+        </div>
+        </script>
+        
+        
+        
+        
+        
+        
+        <script type="text/ng-template" id="page-guitarists">
+        <div class="{{(destPage == 'page-guitarists') ? 'activeView' : 'inactiveView'}}">
+            <h1>
+                <!-- Display the info from the database -->
+                <p>{{(guitaristSelected == true)
+                ? "Info about " + guitarist.name + " (id #" + guitarist.id + "):"
+                : "No guitarist currently selected"}}
+                </p>
+            </h1>
+            <form class="bodyBlock">
+              Name:<br><br>
+              <input type="text" ng-model="guitarist.name" required><br><br>
+              Guitar:<br><br>
+              <input type="text" ng-model="guitarist.guitar" required><br><br>
+              Favourite Song (id):<br>
+              <a href="" ng-click="setSongID(guitarist.favourite_song_id); goToPage('page-songs');">
+                    {{(guitarist_songtitle != null)
+                    ? guitarist_songtitle + " (Click to view)"
+                    : ''}}
+              </a><br>
+              <input type="number" ng-change="guitaristSongChanged()" ng-model="guitarist.favourite_song_id" min="0" required><br><br>
+              Years of experience:<br><br>
+              <input type="number" ng-model="guitarist.experience" min="0" required><br><br>
+            </form class="bodyBlock">
+            <button ng-click="updateGuitarist(guitarist.id);">Update current entry</button>
+            <button ng-click="deleteGuitarist(guitarist.id);">Delete current entry</button><br><br>
+            <button ng-click="postNewGuitarist();">Create as new entry</button>
+            <br><br><br>
+                
+            <div class="bodyBlock">
+                <div ng-repeat="entry in allGuitarists">
+                    <p><button ng-click="setGuitaristID(entry.id);">{{entry.name}}</button></p>
+                </div>
+            </div>
+        </div>
+        </script>
+        
+        
+        
+        
+        
+        <script type="text/ng-template" id="page-bands">
+        <div class="{{(destPage == 'page-bands') ? 'activeView' : 'inactiveView'}}">
+            <h1>
+                <!-- Display the info from the database -->
+                <p>{{(bandSelected == true)
+                ? "Info about " + band.name + " (id #" + band.id + "):"
+                : "No band currently selected"}}
+                </p>
+            </h1>
+            <form class="bodyBlock">
+              Name:<br><br>
+              <input type="text" ng-model="band.name" required><br><br>
+              Location:<br><br>
+              <input type="text" ng-model="band.location" required><br><br>
+              Guitarist (id):<br>
+              <a href="" ng-click="setGuitaristID(band.guitarist_id); goToPage('page-guitarists');">
+                    {{(band_guitaristname != null)
+                    ? band_guitaristname + " (Click to view)"
+                    : ''}}
+              </a><br>
+              <input type="number" ng-change="bandGuitaristChanged()" ng-model="band.guitarist_id" min="0" required><br><br>
+            </form class="bodyBlock">
+            <button ng-click="updateBand(band.id);">Update current entry</button>
+            <button ng-click="deleteBand(band.id);">Delete current entry</button><br><br>
+            <button ng-click="postNewBand();">Create as new entry</button>
+            <br><br><br>
+                
+            <div class="bodyBlock">
+                <div ng-repeat="entry in allBands">
+                    <p><button ng-click="setBandID(entry.id);">{{entry.name}}</button></p>
+                </div>
+            </div>
+        </div>
+        </script>
+        
+        
+        
+        
+        
+        
+        <script type="text/ng-template" id="page-message">
+            <br><br><br><br><br>
+            <div class="centerBody"><h1>{{message}}</h1></div>
+        </script>
+        
+        
+        <script type="text/ng-template" id="page-home">
+        <div class="{{(destPage == 'page-home') ? 'activeView' : 'inactiveView'}}">
+            <h1>Erik Schick - Main Page</h1>
+            <p>Welcome to the main page of my website! Check out any of the databases by clicking above.</p>
+        </div>
+        </script>
+        
+        
+        <script type="text/ng-template" id="page-login">
+        <div class="{{(destPage == 'page-login') ? 'activeView' : 'inactiveView'}}">
+            <h1>Erik Schick - Login Screen</h1>
+            <form class="bodyBlock">
+              <p>{{loginMessage}}</p>
+              Username:<br><br>
+              <input type="text" ng-model="user.name" required><br><br>
+              Password:<br><br>
+              <input type="password" ng-model="user.password" required><br><br>
+              <button ng-click="login()">Login</button>
+              <button ng-click="newLogin()">Create as new user</button>
+            </form class="bodyBlock">
+            <div id="map"></div>
+        </div>
+        </script>
+        
+        
+        <div id="floatingHeader" ng-style="{'visibility': loggedIn?'visible':'hidden'}">
+            <a class="logoutButton" ng-click="logout();">{{user.name}} (click to log out)</a>
+            <!--<a class="headerButton {{(destPage == 'page-home') ? 'headerHighlighted' : ''}}"
+                ng-click="goToPage('page-home');">Home</a>-->
+            <a class="headerButton {{(destPage == 'page-songs') ? 'headerHighlighted' : ''}}"
+                ng-click="goToPage('page-songs');">Songs</a>
+            <a class="headerButton {{(destPage == 'page-guitarists') ? 'headerHighlighted' : ''}}"
+                ng-click="goToPage('page-guitarists');">Guitarists</a>
+            <a class="headerButton {{(destPage == 'page-bands') ? 'headerHighlighted' : ''}}"
+                ng-click="goToPage('page-bands');">Bands</a>
+        </div>
+        
+        
+        <div class="floatingSidebar hvr-bob">
+            <span class="{{(transitioning == true) ? 'fadeOut' : 'fadeIn'}}">
+                <img src="{{imgSource}}" style="max-height: {{imgHeight}}; max-width: {{imgWidth}};">
+            </span>
+        </div>
+        
+        <span class="htmlBackground"></span>
+        
+        <div class="centerBody">
+            <div class="inlineSidebar">
+                <img src="{{imgSource}}" style="max-height: {{imgHeight}}; max-width: {{imgWidth}};">
+            </div>
+            <div id="tpl-content" ng-include src="templateUrl"></div>
+        </div>
+        
+    </div>
+  </body>
+</html>

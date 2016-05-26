@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+    <%--<div>
         <h1>My Image Galery</h1>
         <asp:DataList ID="dlstImage" runat="server" RepeatColumns="3" RepeatDirection="Horizontal">
             <ItemTemplate>
@@ -22,7 +22,9 @@
         <hr/>
         <asp:FileUpload ID="fupUpload" runat="server" /> &nbsp<asp:Button ID="btnSave" runat="server" Text="Upload" OnClick="btnSave_Click" />
 
-    </div>
+    </div>--%>
+        <p>HOMEPAGE BANNER</p>
+        <asp:FileUpload ID="bannerUpload" runat="server" /> &nbsp<asp:Button ID="btnSaveBanner" runat="server" Text="Upload" OnClick="btnSave_Click" />
     </form>
 </body>
 </html>
