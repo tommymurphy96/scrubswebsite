@@ -1,0 +1,76 @@
+@keyframes slideOutLeft {
+    to      { transform: translateX(-200%); }
+}
+
+.inactiveView {
+    animation: slideOutLeft 0.2s both ease-in;
+    z-index: 3;
+}
+
+@keyframes slideInRight {
+    from    { transform:translateX(200%); }
+    to      { transform: translateX(0); }
+}
+
+.activeView {
+    animation: slideInRight 0.4s both ease-out;
+    z-index: 2;
+}
+
+@keyframes fadeIn {
+    from    { opacity: 0; }
+    to      { opacity: 1; }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+@keyframes fadeOut {
+    from    { opacity: 1; }
+    to      { opacity: 0; }
+}
+
+.fadeOut {
+    animation-name: fadeOut;
+    animation-duration: .5s;
+}
+
+/* Bob */
+/* Based on hover.css, see https://github.com/IanLunn/Hover/blob/master/css/hover.css */
+
+@keyframes hvr-bob {
+  0% {
+    transform: translateY(-60%);
+  }
+
+  50% {
+    transform: translateY(-40%);
+  }
+
+  100% {
+    transform: translateY(-220%);
+  }
+}
+
+
+@keyframes hvr-bob-float {
+  100% {
+    transform: translateY(-220%);
+  }
+}
+
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  animation-name: hvr-bob-float, hvr-bob;
+  animation-duration: .2s, 4s;
+  animation-delay: 0s, 0s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
+}
