@@ -30,13 +30,7 @@ namespace Buncha_Scrubs
             string ext = Path.GetExtension(fileName);
             switch (ext.ToLower())
             {
-                case ".gif":
-                    return true;
                 case ".png":
-                    return true;
-                case ".jpg":
-                    return true;
-                case ".jpeg":
                     return true;
                 default:
                     return false;
@@ -57,15 +51,32 @@ namespace Buncha_Scrubs
 
         protected void btnSaveBanner_Click(object sender, EventArgs e)
         {
-
-
-            string filePath = "~/Images/Banner" + bannerUpload.FileName.Substring(bannerUpload.FileName.LastIndexOf(".") -1);
+            string filePath = "~/Images/BannerBanner" + bannerUpload.FileName.Substring(bannerUpload.FileName.LastIndexOf("."));
 
             if (CheckFileType(filePath))
             {
                 bannerUpload.SaveAs(MapPath(filePath));
             }
+        }
 
+        protected void btnSaveShop_Click(object sender, EventArgs e)
+        {
+            string filePath = "~/Images/ShopThisBanner" + bannerUpload.FileName.Substring(bannerUpload.FileName.LastIndexOf("."));
+
+            if (CheckFileType(filePath))
+            {
+                bannerUpload.SaveAs(MapPath(filePath));
+            }
+        }
+
+        protected void btnSaveCollection_Click(object sender, EventArgs e)
+        {
+            string filePath = "~/Images/ColletionBanner" + bannerUpload.FileName.Substring(bannerUpload.FileName.LastIndexOf("."));
+
+            if (CheckFileType(filePath))
+            {
+                bannerUpload.SaveAs(MapPath(filePath));
+            }
         }
     }
 }

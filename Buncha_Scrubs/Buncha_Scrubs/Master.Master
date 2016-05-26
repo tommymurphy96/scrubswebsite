@@ -12,7 +12,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="css/Custom.css" rel="stylesheet" />
+    <link href="css/Custom.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="css/all.min.css"/>
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -20,6 +20,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>   
+    
 
       <script>
           $(document).ready(function () {
@@ -67,12 +68,12 @@
                   <div class="navbar navbar-default navbar-inverse" role="navigation">
                       <div class="container">
                           <div class="navbar-header">
-                              <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-collapse">
+                              <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-collapse"> 
                                   <span class="sr-only">Toggle Navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                               </button>
                               <%--<a class="navbar-brand" href="Home.aspx"></a>--%>
                           </div>
-                          <div class="navbar-collapse collapse  ">
+                          <div class="navbar-collapse collapse">
                               <ul class="nav navbar-nav">
                                   <li class="dropdown"><a href="#" class="dropdown-toggle test" data-toggle="dropdown">LookBook<span class="caret"></span></a>
                                       <ul class="dropdown-menu">
@@ -217,7 +218,7 @@
                 <img src="Images/SimpleFb.ico" title="Facebook" alt="Facebook" class="img-circle FacebookImg" /> 
 
                 <a href="https://twitter.com/averybowcanada" />
-                <img src="Images/TwitterIcon.png" title="Twitter" alt="Tiwtter" class="img-circle TwitterImg"/> 
+                <img src="Images/TwitterIcon.png" title="Twitter" alt="Twitter" class="img-circle TwitterImg"/> 
 
                 <a href="https://www.instagram.com/averybowcanada/"/>
                 <img src="Images/InstaIcon.ico" title="Instagram"  alt="Instagram" class="img-circle InstaImg"/> 
@@ -233,9 +234,7 @@
 
                 </div>
             </div>
-
-
-</footer>
+    </footer>
           
   <!-- footer -->
     </asp:ContentPlaceHolder>

@@ -180,22 +180,28 @@ a:-webkit-any-link {
     border-radius: 0;
 }
 .navbar-nav {
+    
+    /*display:inline-block;*/
     text-align: center;
     width: 100%;
 }
+
 .navbar-nav > li {
-  display: inline-block !important;
+ 
+  display:inline-block;
   float: none;
   margin: 0 0 0 0;
-  text-align:left;
+  text-align:center;
   
 }
 
-/*.navbar-collapse {
-  text-align:left;
-  display:none;
-  
-}*/
+.navbar-custom {
+
+    display:inline-block;
+    
+
+}
+
 .row {
     margin-right: -10px;
     margin-left: -10px;
@@ -362,7 +368,7 @@ a:hover.back-to-top {
 
 }
 
-.navbar-toggle {
+#navbar-toggle {
     text-align:left;
     float:left;
 }
