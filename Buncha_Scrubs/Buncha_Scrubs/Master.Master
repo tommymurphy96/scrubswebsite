@@ -58,7 +58,7 @@
                           <div class="row">
                               <h1 class="header-logo col-xs-12">
                                   <a href="default.aspx">
-                                      <img id="brand-logo" src="Images/main logo.png" alt="Avery Bow" /> 
+                                      <img id="brand-logo" src="Images/Avery Bow Logo.png" alt="Avery Bow" /> 
                                   </a>
                               </h1>
                           </div>
@@ -122,7 +122,8 @@
     <div class="container banner2">
         <div class="banner-data">
             <p class="right">
-                      <a class="btn btn-default" href="#" role="button">SHOP PRINT &raquo;</a></p>        
+                      <a class="btn btn-default" href="#" role="button">SHOP PRINT &raquo;</a>
+            </p>        
         </div>
     </div>
     <div class="container banner3">

@@ -66,6 +66,7 @@
     <Content Include="AutumnWinterProducts.aspx" />
     <Content Include="AutomnWinterProducts.xml" />
     <Content Include="css\Custom.css" />
+    <Content Include="Images\Avery Bow Logo.png" />
     <Content Include="Images\AW161.jpeg" />
     <Content Include="Images\AW162.jpeg" />
     <Content Include="Images\AW163.jpeg" />
