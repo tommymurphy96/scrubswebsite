@@ -65,7 +65,7 @@ namespace Buncha_Scrubs
 
             if (CheckFileType(filePath))
             {
-                bannerUpload.SaveAs(MapPath(filePath));
+                shopThisUpload.SaveAs(MapPath(filePath));
             }
         }
 
@@ -75,8 +75,30 @@ namespace Buncha_Scrubs
 
             if (CheckFileType(filePath))
             {
-                bannerUpload.SaveAs(MapPath(filePath));
+                collectionUpload.SaveAs(MapPath(filePath));
             }
+        }
+
+        protected void btnAWLookBookAdd_Click(object sender, EventArgs e)
+        {
+            //check if any node already matches current name, and if so do nothing
+            //if no match, append information to xml... probably with a writeline?
+        }
+
+        protected void btnSSLookBookAdd_Click(object sender, EventArgs e)
+        {
+            //above
+        }
+
+        protected void btnAWLookBookDelete_Click(object sender, EventArgs e)
+        {
+            //go through xml, find node by name, delete node from text document(find index of parent node, delete x lines down?)
+            //also find and delete picture from server by name (is this a thing?)
+        }
+
+        protected void btnSSLookBookDelete_Click(object sender, EventArgs e)
+        {
+            //above
         }
     }
 }

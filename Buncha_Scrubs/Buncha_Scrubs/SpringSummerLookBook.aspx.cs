@@ -18,7 +18,7 @@ namespace Buncha_Scrubs
             XmlNodeList link = null;
             XmlNodeList name = null;
             // string configFile = "C:\\Users\\murphy2079\\Documents\\GitHub\\scrubswebsite\\Buncha_Scrubs\\Buncha_Scrubs\\imagegallery.xml";
-            string configFile = Server.MapPath("SpringSummerPrints.xml"); // Directory.GetCurrentDirectory();
+            string configFile = Server.MapPath("SpringSummerLookBook.xml"); // Directory.GetCurrentDirectory();
             //string configFile = currentDir + "\\imagegallery.xml";
             int reports = 0;
             List<GalleryObject> galleryImages = new List<GalleryObject>();

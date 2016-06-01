@@ -58,13 +58,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin.aspx" />
-    <Content Include="AutumnWinterPrints.aspx" />
+    <Content Include="AutumnWinterLookBook.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="AutumnWinterProducts.aspx" />
-    <Content Include="AutomnWinterProducts.xml" />
     <Content Include="css\Custom.css" />
     <Content Include="Images\Avery Bow Logo.png" />
     <Content Include="Images\AW161.jpeg" />
@@ -87,15 +85,13 @@
     <Content Include="Images\WeeblyIcon.png" />
     <Content Include="Images\YoutubeIcon.png" />
     <Content Include="Login.aspx" />
-    <Content Include="SpringSummerProducts.aspx" />
-    <Content Include="SpringSummerProducts.xml" />
-    <Content Include="SpringSummerPrints.xml" />
+    <Content Include="SpringSummerLookBook.xml" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="AutomnWinterPrints.xml" />
+    <Content Include="AutomnWinterLookBook.xml" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\npm.js" />
@@ -114,7 +110,7 @@
     <Content Include="Prints\AW16 7.jpeg" />
     <Content Include="Prints\AW16 8.jpeg" />
     <Content Include="Scripts\typings\Headroom\headroom.d.ts" />
-    <Content Include="SpringSummerPrints.aspx" />
+    <Content Include="SpringSummerLookBook.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap-theme.min.css.map" />
@@ -144,19 +140,12 @@
     <Compile Include="Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AutumnWinterPrints.aspx.cs">
-      <DependentUpon>AutumnWinterPrints.aspx</DependentUpon>
+    <Compile Include="AutumnWinterLookBook.aspx.cs">
+      <DependentUpon>AutumnWinterLookBook.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AutumnWinterPrints.aspx.designer.cs">
-      <DependentUpon>AutumnWinterPrints.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="AutumnWinterProducts.aspx.cs">
-      <DependentUpon>AutumnWinterProducts.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AutumnWinterProducts.aspx.designer.cs">
-      <DependentUpon>AutumnWinterProducts.aspx</DependentUpon>
+    <Compile Include="AutumnWinterLookBook.aspx.designer.cs">
+      <DependentUpon>AutumnWinterLookBook.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -164,13 +153,6 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SpringSummerProducts.aspx.cs">
-      <DependentUpon>SpringSummerProducts.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SpringSummerProducts.aspx.designer.cs">
-      <DependentUpon>SpringSummerProducts.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
@@ -180,12 +162,12 @@
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SpringSummerPrints.aspx.cs">
-      <DependentUpon>SpringSummerPrints.aspx</DependentUpon>
+    <Compile Include="SpringSummerLookBook.aspx.cs">
+      <DependentUpon>SpringSummerLookBook.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SpringSummerPrints.aspx.designer.cs">
-      <DependentUpon>SpringSummerPrints.aspx</DependentUpon>
+    <Compile Include="SpringSummerLookBook.aspx.designer.cs">
+      <DependentUpon>SpringSummerLookBook.aspx</DependentUpon>
     </Compile>
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
