@@ -450,3 +450,11 @@ a:hover.back-to-top {
 
 }
 
+.jumbotron 
+{
+    background-image:url(../Images/4.11.16_hp4.jpg);
+   color:#000;
+    min-height:300px;
+    margin-top:0px;
+    margin-bottom:8px;
+}
