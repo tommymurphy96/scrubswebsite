@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml;
 
 namespace Buncha_Scrubs
 {
@@ -12,6 +13,19 @@ namespace Buncha_Scrubs
     {
         protected void Page_PreRender(object sender, EventArgs e)
         {
+            xmlMaker xmlmaw = new xmlMaker(Server.MapPath("AutomnWinterLookBook.xml"));
+
+            ddlAW.DataSource = xmlmaw.GalleryImages;
+            ddlAW.DataValueField = "Path";
+            ddlAW.DataTextField = "Name";
+            ddlAW.DataBind();
+
+            xmlMaker xmlmss = new xmlMaker(Server.MapPath("SpringSummerLookBook.xml"));
+
+            ddlSS.DataSource = xmlmss.GalleryImages;
+            ddlSS.DataValueField = "Path";
+            ddlSS.DataTextField = "Name";
+            ddlSS.DataBind();
 
             //DirectoryInfo dir = new DirectoryInfo(MapPath("~/Images/"));
             //dlstImage.DataSource = dir.GetFiles();
@@ -23,6 +37,8 @@ namespace Buncha_Scrubs
             //    File.Delete(dir + fileName);
             //    Response.Redirect("Admin.aspx");
             //}
+
+
         }
 
         private bool CheckFileType(string fileName)
@@ -65,7 +81,7 @@ namespace Buncha_Scrubs
 
             if (CheckFileType(filePath))
             {
-                bannerUpload.SaveAs(MapPath(filePath));
+                shopThisUpload.SaveAs(MapPath(filePath));
             }
         }
 
@@ -75,8 +91,31 @@ namespace Buncha_Scrubs
 
             if (CheckFileType(filePath))
             {
-                bannerUpload.SaveAs(MapPath(filePath));
+                collectionUpload.SaveAs(MapPath(filePath));
             }
+        }
+
+        protected void btnAWLookBookAdd_Click(object sender, EventArgs e)
+        {            
+            //check if any node already matches current name, and if so do nothing
+            //if no match, append information to xml... probably with a writeline?
+        }
+
+        protected void btnSSLookBookAdd_Click(object sender, EventArgs e)
+        {
+            //above
+        }
+
+        protected void btnAWLookBookDelete_Click(object sender, EventArgs e)
+        {
+            //go through xml, find node by name, delete node from text document(find index of parent node, delete x lines down?)
+            //also find and delete picture from server by name (is this a thing?)
+
+        }
+
+        protected void btnSSLookBookDelete_Click(object sender, EventArgs e)
+        {
+            //above
         }
     }
 }

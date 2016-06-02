@@ -1,0 +1,5 @@
+https://msdn.microsoft.com/en-us/library/system.xml.xmlnode.appendchild(v=vs.110).aspx
+http://stackoverflow.com/questions/2558787/how-to-modify-existing-xml-file-with-xmldocument-and-xmlnode-in-c-sharp
+http://stackoverflow.com/questions/875136/how-to-remove-an-xmlnode-from-xmlnodelist
+https://msdn.microsoft.com/en-us/library/cc189056(v=vs.95).aspx
+http://stackoverflow.com/questions/20611/removing-nodes-from-an-xmldocument
