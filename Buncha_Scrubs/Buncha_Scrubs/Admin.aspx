@@ -28,7 +28,7 @@
         <asp:FileUpload ID="AWLookBookUpload" runat="server" />
         &nbsp<asp:Button ID="btnAWLookBookAdd" runat="server" Text="Upload" OnClick="btnAWLookBookAdd_Click" />
         <p>DELETE</p>
-        <p>//maybe ddls that can update?</p>
+        <asp:DropDownList runat="server" ID="ddlAW"></asp:DropDownList>
         <p>//picture of thing goes here</p>
         <asp:Button ID="btnAWLookBookDelete" runat="server" Text="Delete" OnClick="btnAWLookBookDelete_Click" />
 
@@ -38,7 +38,7 @@
         <asp:FileUpload ID="SSLookBookUpload" runat="server" />
         &nbsp<asp:Button ID="btnSSLookBookAdd" runat="server" Text="Upload" OnClick="btnSSLookBookAdd_Click" />
        <p>DELETE</p>
-        <p>//maybe ddls that can update?</p>
+        <asp:DropDownList runat="server" ID="ddlSS"></asp:DropDownList>
         <p>//picture of thing goes here</p>
         <asp:Button ID="btnSSLookBookDelete" runat="server" Text="Delete" OnClick="btnSSLookBookDelete_Click" />
 
