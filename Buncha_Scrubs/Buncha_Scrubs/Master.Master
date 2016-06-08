@@ -12,30 +12,29 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="css/Custom.css" rel="stylesheet" type="text/css"/>
+    <link href="css/Custom.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/all.min.css"/>
-
-
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script> 
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>   
+
       <script>
           $(document).ready(function () {
               $(".dropdown").on("hide.bs.dropdown", function () {
-                  $(".test").html('LookBook <span class="caret"></span>');
+                  $(".test").html('Collection <span class="caret"></span>');
               });
               $(".dropdown").on("show.bs.dropdown", function () {
-                  $(".test").html('LookBook <span class="caret caret-up"></span>');
+                  $(".test").html('Collection <span class="caret caret-up"></span>');
               });
 
               $(".dropdown1").on("hide.bs.dropdown", function () {
-                  $(".test1").html('Shop-Prints <span class="caret"></span>');
+                  $(".test1").html('Connect <span class="caret"></span>');
               });
               $(".dropdown1").on("show.bs.dropdown", function () {
-                  $(".test1").html('Shop-Prints <span class="caret caret-up"></span>');
+                  $(".test1").html('Connect <span class="caret caret-up"></span>');
               });
           });
     </script>
@@ -57,57 +56,39 @@
                   <div class="container">
                       <div class="header-panel">
                           <div class="row">
-                              <h1 class="header-logo col-xs-12">
-                                  <a href="default.aspx">
-                                      <img id="brand-logo" src="Images/Avery Bow Logo.png" alt="Avery Bow" /> 
-                                  </a>
-                              </h1>
+                              <h1 class="header-logo col-xs-12"><a href="#">
+                                  <img id="brand-logo" src="Images/main logo.png" alt="Avery Bow" /></a></h1>
                           </div>
                       </div>
                   </div>
                   <div class="navbar navbar-default navbar-inverse" role="navigation">
                       <div class="container">
                           <div class="navbar-header">
-                              <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-collapse"> 
+                              <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-collapse">
                                   <span class="sr-only">Toggle Navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                               </button>
-                              <%--<a class="navbar-brand" href="Home.aspx"></a>--%>
+                              <a class="navbar-brand" href="Home.aspx"></a>
                           </div>
                           <div class="navbar-collapse collapse">
                               <ul class="nav navbar-nav">
-                                  <li class="dropdown"><a href="#" class="dropdown-toggle test" data-toggle="dropdown">LookBook<span class="caret"></span></a>
+                                  <li class="active"><a href="Default.aspx">Home</a></li>
+                                  <li class="dropdown"><a href="#" class="dropdown-toggle test" data-toggle="dropdown">Collection<span class="caret"></span></a>
                                       <ul class="dropdown-menu">
-                                          <li><a href="#">Automn/Winter 2016</a></li>
-                                          <li><a href="#">Spring/Summer 2017</a></li>
+                                          <li class="dropdown-header">Autumn/Winter 2016</li>
+                                          <li role="separator" class="divider"></li>
+                                          <li><a href="AutumnWinterPrints.aspx">Prints</a></li>
+                                          <li><a href="AutumnWinterProducts.aspx">Products</a></li>
+                                          <li role="separator" class="divider"></li>
+                                          <li class="dropdown-header">Spring/Summer 2017</li>
+                                          <li role="separator" class="divider"></li>
+                                          <li><a href="SpringSummerPrints.aspx">Prints</a></li>
+                                          <li><a href="SpringSummerProducts.aspx">Products</a></li>
                                       </ul>
                                   </li>
-                                  <li class="dropdown1"><a href="#" class="dropdown-toggle dropdown1 test1" data-toggle="dropdown">Shop-Prints<span class="caret"></span></a>
-                                      <ul class="dropdown-menu">
-                                          <li><a href="#">Print 1</a></li>
-                                          <li><a href="#">Print 2</a></li>
-                                          <li><a href="#">Print 3</a></li>
-                                          <li><a href="#">Print 4</a></li>
-                                          <li><a href="#">Print 5</a></li>
-                                          <li><a href="#">Print 6</a></li>
-                                          <li><a href="#">Print 7</a></li>
-                                          <li><a href="#">Print 8</a></li>
-                                          <li><a href="#">Print 9</a></li>
-                                          <li><a href="#">Print 10</a></li>
-                                          <li><a href="#">Print 11</a></li>
-                                          <li><a href="#">Print 12</a></li>
-                                          <li><a href="#">Print 13</a></li>
-                                          <li><a href="#">Print 14</a></li>
-                                          <li><a href="#">Print 15</a></li>
-                                          <li><a href="#">Print 17</a></li>
-                                          <li><a href="#">Print 18</a></li>
-                                          <li><a href="#">Print 19</a></li>
-                                          <li><a href="#">Print 20</a></li>
-                                      </ul>
-                                  </li>
-                                  <li><a href="BowTies.aspx">BowTies</a></li>
-                                  <li><a href="Tops.aspx">Tops</a></li>
-                                  <li><a href="Accessories.aspx">Accessories</a></li>
-                                  <li><a href="About.aspx">About Avery Bow</a></li>
+
+                                  <li><a href="Video.aspx">Video</a></li>
+                                  <li><a href="Connect.aspx">Connect</a></li>
+                                  <li><a href="About.aspx">About</a></li>
                               </ul>
                           </div>
                       </div>
@@ -116,22 +97,6 @@
           </header>
     </asp:ContentPlaceHolder>
 <!--Header-->
-     <div class="container banner1">
-        <div class="banner-data">
-        </div>
-    </div>
-    <div class="container banner2">
-        <div class="banner-data">
-            <p class="right">
-                      <a class="btn btn-default" href="#" role="button">SHOP PRINT &raquo;</a>
-            </p>        
-        </div>
-    </div>    
-    <div class="container banner3">
-        <div class="banner-data">        
-        </div>
-    </div>
-
       <asp:ContentPlaceHolder ID="Carousel" runat="server">
     <!--Carousel-->
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -141,36 +106,70 @@
                   <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                   <li data-target="#carousel-example-generic" data-slide-to="2"></li>
               </ol>
+
   <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
-                  <div class="item active jumbotron">
-                      <img class="displayed" src="Images/1.jpeg" alt="..." />
+                  <div class="item active">
+                      <img class="displayed" src="Images/AW16 1.jpeg" alt="..." />
                       
                           <h3>Image 1</h3>
            
                   </div>
-                  <div class="item jumbotron ">
-                      <img class="displayed" src="Images/2.jpeg" alt="..."/>
+                  <div class="item">
+                      <img class="displayed" src="Images/AW16 2.jpeg" alt="..."/>
                      
                           <h3>Image 2</h3>
                   </div>
-                  <div class="item jumbotron ">
-                      <img class="displayed" src="Images/3.jpeg" alt="..."/>
+                  <div class="item">
+                      <img class="displayed" src="Images/AW16 3.jpeg" alt="..."/>
                       
                           <h3>Image 3</h3>
+                      
                   </div>
               </div>
+
   <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span> 
-              </a>
-              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-              </a>
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span> </a><a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span> </a>
           </div>
   <!--Carousel-->
+  </asp:ContentPlaceHolder>
+  <%--</div>--%>
+  <asp:ContentPlaceHolder ID="MiddleContents" runat="server">
+      <br />
+  <!-- Middle Contents -->
+      <br />
+      <div class="container center">
+          <div class="title">
+              <h2>Upcoming Events </h2>
+          </div>
+          <div class="row">
+              <div class="col-xs-12 col-sm-4 col-md-4 block1">
+                  <img src="Images/AW16 4.jpeg" alt="thumb01" />
+                  <h2>Event</h2>
+                  <p class="center">
+                      jvbjdbkjdsbvsjdbvkjdbvkjbvvkjfdvbsjdv bsjdvbsjdbvjsdvbsjdbvjsdbvjsdvgbjsdvbshdvbkjvbvhbsdjvbshdvjsdvbskjsvbj</p>
+                  <p class="center">
+                      <a class="btn btn-default" href="#" role="button">View &raquo;</a></p>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4 block1">
+                  <img src="Images/AW16 5.jpeg" alt="thumb02" />
+                  <h2>Event1</h2>
+                  <p class="center">
+                      jvbjdbkjdsbvsjdbvkjdbvkjbvvkjfdvbsjdv bsjdvbsjdbvjsdvbsjdbvjsdbvjsdvgbjsdvbshdvbkjvbvhbsdjvbshdvjsdvbskjsvbj</p>
+                  <p class="center">
+                      <a class="btn btn-default" href="#" role="button">View &raquo;</a></p>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-4 block1">
+                  <img src="Images/AW16 6.jpeg" alt="thumb03"/>
+                  <h2>Event2</h2>
+                  <p class="center">
+                      jvbjdbkjdsbvsjdbvkjdbvkjbvvkjfdvbsjdv bsjdvbsjdbvjsdvbsjdbvjsdbvjsdvgbjsdvbshdvbkjvbvhbsdjvbshdvjsdvbskjsvbj</p>
+                  <p class="center">
+                      <a class="btn btn-default" href="#" role="button">View &raquo;</a></p>
+              </div>
+          </div>
+      </div>
+  <!-- Middle Contents -->
  </asp:ContentPlaceHolder>
  <asp:ContentPlaceHolder ID="Footer" runat="server">
   <!-- footer -->
@@ -184,7 +183,7 @@
                 <img src="Images/SimpleFb.ico" title="Facebook" alt="Facebook" class="img-circle FacebookImg" /> 
 
                 <a href="https://twitter.com/averybowcanada" />
-                <img src="Images/TwitterIcon.png" title="Twitter" alt="Twitter" class="img-circle TwitterImg"/> 
+                <img src="Images/TwitterIcon.png" title="Twitter" alt="Tiwtter" class="img-circle TwitterImg"/> 
 
                 <a href="https://www.instagram.com/averybowcanada/"/>
                 <img src="Images/InstaIcon.ico" title="Instagram"  alt="Instagram" class="img-circle InstaImg"/> 
@@ -200,7 +199,9 @@
 
                 </div>
             </div>
-    </footer>
+
+
+</footer>
           
   <!-- footer -->
     </asp:ContentPlaceHolder>
@@ -274,6 +275,5 @@
         return false;
     });
 </script>
-
 </body>
 </html>
