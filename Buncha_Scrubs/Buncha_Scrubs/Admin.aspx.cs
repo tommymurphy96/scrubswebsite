@@ -15,15 +15,15 @@ namespace Buncha_Scrubs
         {
             xmlMaker xmlmaw = new xmlMaker(Server.MapPath("AutomnWinterLookBook.xml"));
 
-            ddlAW.DataSource = xmlmaw.GalleryImages;
-            ddlAW.DataValueField = "Path";
+            ddlAW.DataSource = xmlmaw.getXmlList();
+            ddlAW.DataValueField = "Name";
             ddlAW.DataTextField = "Name";
             ddlAW.DataBind();
 
             xmlMaker xmlmss = new xmlMaker(Server.MapPath("SpringSummerLookBook.xml"));
 
-            ddlSS.DataSource = xmlmss.GalleryImages;
-            ddlSS.DataValueField = "Path";
+            ddlSS.DataSource = xmlmss.getXmlList();
+            ddlSS.DataValueField = "Name";
             ddlSS.DataTextField = "Name";
             ddlSS.DataBind();
 
@@ -96,26 +96,74 @@ namespace Buncha_Scrubs
         }
 
         protected void btnAWLookBookAdd_Click(object sender, EventArgs e)
-        {            
+        {   
             //check if any node already matches current name, and if so do nothing
-            //if no match, append information to xml... probably with a writeline?
+            xmlMaker awXml = new xmlMaker(Server.MapPath("AutomnWinterLookBook.xml"));
+            List<GalleryObject> glist = awXml.getXmlList();
+            int nodecheck = -1;
+            for (int i = 0; i < glist.Count();i++ )
+            {
+                if (String.Compare(glist[i].Name, AWLookBookUpload.FileName.ToString(), true) == 0)
+                {
+                    nodecheck = i;
+                }
+            }
+            //if no match, append information to xml?
+            if (nodecheck == -1)
+            {
+                awXml.addNode(AWLookBookUpload.FileName.ToString(), Server.MapPath(AWLookBookUpload.FileName.ToString())/*, txtAWLookbook.Text*/);
+            }
+
+            string filePath = "~/Images/" + AWLookBookUpload.FileName;
+
+            if (CheckFileType(filePath))
+            {
+                AWLookBookUpload.SaveAs(MapPath(filePath));
+            }
         }
 
         protected void btnSSLookBookAdd_Click(object sender, EventArgs e)
         {
-            //above
+            //check if any node already matches current name, and if so do nothing
+            xmlMaker ssXml = new xmlMaker(Server.MapPath("SpringSummerLookBook.xml"));
+            List<GalleryObject> glist = ssXml.getXmlList();
+            int nodecheck = -1;
+            for (int i = 0; i < glist.Count();i++ )
+            {
+                if (String.Compare(glist[i].Name, SSLookBookUpload.FileName.ToString(), true) == 0)
+                {
+                    nodecheck = i;
+                }
+            }
+            //if no match, append information to xml?
+            if (nodecheck == -1)
+            {
+                ssXml.addNode(SSLookBookUpload.FileName.ToString(), Server.MapPath(SSLookBookUpload.FileName.ToString())/*, txtSSLookbook.Text*/);
+            }
+
+            string filePath = "~/Images/" + SSLookBookUpload.FileName;
+
+            if (CheckFileType(filePath))
+            {
+                SSLookBookUpload.SaveAs(MapPath(filePath));
+            }
         }
+        
 
         protected void btnAWLookBookDelete_Click(object sender, EventArgs e)
         {
-            //go through xml, find node by name, delete node from text document(find index of parent node, delete x lines down?)
-            //also find and delete picture from server by name (is this a thing?)
-
+            xmlMaker awXml = new xmlMaker(Server.MapPath("AutomnWinterLookBook.xml"));
+            awXml.deleteNode(ddlAW.Text);
+            FileInfo file = new FileInfo(ddlAW.SelectedValue);
+            file.Delete();
         }
 
         protected void btnSSLookBookDelete_Click(object sender, EventArgs e)
         {
-            //above
+            xmlMaker ssXml = new xmlMaker(Server.MapPath("SpringSummerLookBook.xml"));
+            ssXml.deleteNode(ddlSS.Text);
+            FileInfo file = new FileInfo(ddlSS.SelectedValue);
+            file.Delete();
         }
     }
 }

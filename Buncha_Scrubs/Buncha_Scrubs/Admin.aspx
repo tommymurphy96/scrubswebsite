@@ -27,6 +27,7 @@
         <p>ADD</p>
         <asp:FileUpload ID="AWLookBookUpload" runat="server" />
         &nbsp<asp:Button ID="btnAWLookBookAdd" runat="server" Text="Upload" OnClick="btnAWLookBookAdd_Click" />
+        <%--&nbsp<asp:TextBox ID="txtAWLookbook" runat="server"></asp:TextBox>--%>
         <p>DELETE</p>
         <asp:DropDownList runat="server" ID="ddlAW"></asp:DropDownList>
         <p>//picture of thing goes here</p>
@@ -37,6 +38,7 @@
         <p>ADD</p>
         <asp:FileUpload ID="SSLookBookUpload" runat="server" />
         &nbsp<asp:Button ID="btnSSLookBookAdd" runat="server" Text="Upload" OnClick="btnSSLookBookAdd_Click" />
+        <%--&nbsp<asp:TextBox ID="txtSSLookbook" runat="server"></asp:TextBox>--%>
        <p>DELETE</p>
         <asp:DropDownList runat="server" ID="ddlSS"></asp:DropDownList>
         <p>//picture of thing goes here</p>
