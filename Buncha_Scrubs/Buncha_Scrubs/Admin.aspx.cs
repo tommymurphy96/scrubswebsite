@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml;
 
 namespace Buncha_Scrubs
 {
@@ -12,17 +13,32 @@ namespace Buncha_Scrubs
     {
         protected void Page_PreRender(object sender, EventArgs e)
         {
+            xmlMaker xmlmaw = new xmlMaker(Server.MapPath("AutomnWinterLookBook.xml"));
 
-            DirectoryInfo dir = new DirectoryInfo(MapPath("~/Prints/"));
-            dlstImage.DataSource = dir.GetFiles();
-            dlstImage.DataBind();
+            ddlAW.DataSource = xmlmaw.GalleryImages;
+            ddlAW.DataValueField = "Path";
+            ddlAW.DataTextField = "Name";
+            ddlAW.DataBind();
 
-            String fileName = Request.QueryString["fileToDelete"];
-            if (fileName != null)
-            {
-                File.Delete(dir + fileName);
-                Response.Redirect("Admin.aspx");
-            }
+            xmlMaker xmlmss = new xmlMaker(Server.MapPath("SpringSummerLookBook.xml"));
+
+            ddlSS.DataSource = xmlmss.GalleryImages;
+            ddlSS.DataValueField = "Path";
+            ddlSS.DataTextField = "Name";
+            ddlSS.DataBind();
+
+            //DirectoryInfo dir = new DirectoryInfo(MapPath("~/Images/"));
+            //dlstImage.DataSource = dir.GetFiles();
+            //dlstImage.DataBind();
+
+            //String fileName = Request.QueryString["fileToDelete"];
+            //if (fileName != null)
+            //{
+            //    File.Delete(dir + fileName);
+            //    Response.Redirect("Admin.aspx");
+            //}
+
+
         }
 
         private bool CheckFileType(string fileName)
@@ -30,13 +46,7 @@ namespace Buncha_Scrubs
             string ext = Path.GetExtension(fileName);
             switch (ext.ToLower())
             {
-                case ".gif":
-                    return true;
                 case ".png":
-                    return true;
-                case ".jpg":
-                    return true;
-                case ".jpeg":
                     return true;
                 default:
                     return false;
@@ -44,15 +54,68 @@ namespace Buncha_Scrubs
 
         }
 
-        protected void btnSave_Click(object sender, EventArgs e)
+        //protected void btnSave_Click(object sender, EventArgs e)
+        //{
+        //    string filePath = "~/Images/" + fupUpload.FileName;
+
+        //    if (CheckFileType(filePath))
+        //    {
+        //        fupUpload.SaveAs(MapPath(filePath));
+        //    }
+
+        //}
+
+        protected void btnSaveBanner_Click(object sender, EventArgs e)
         {
-            string filePath = "~/Prints/" + fupUpload.FileName;
+            string filePath = "~/Images/BannerBanner" + bannerUpload.FileName.Substring(bannerUpload.FileName.LastIndexOf("."));
 
             if (CheckFileType(filePath))
             {
-                fupUpload.SaveAs(MapPath(filePath));
+                bannerUpload.SaveAs(MapPath(filePath));
             }
+        }
 
+        protected void btnSaveShop_Click(object sender, EventArgs e)
+        {
+            string filePath = "~/Images/ShopThisBanner" + bannerUpload.FileName.Substring(bannerUpload.FileName.LastIndexOf("."));
+
+            if (CheckFileType(filePath))
+            {
+                shopThisUpload.SaveAs(MapPath(filePath));
+            }
+        }
+
+        protected void btnSaveCollection_Click(object sender, EventArgs e)
+        {
+            string filePath = "~/Images/ColletionBanner" + bannerUpload.FileName.Substring(bannerUpload.FileName.LastIndexOf("."));
+
+            if (CheckFileType(filePath))
+            {
+                collectionUpload.SaveAs(MapPath(filePath));
+            }
+        }
+
+        protected void btnAWLookBookAdd_Click(object sender, EventArgs e)
+        {            
+            //check if any node already matches current name, and if so do nothing
+            //if no match, append information to xml... probably with a writeline?
+        }
+
+        protected void btnSSLookBookAdd_Click(object sender, EventArgs e)
+        {
+            //above
+        }
+
+        protected void btnAWLookBookDelete_Click(object sender, EventArgs e)
+        {
+            //go through xml, find node by name, delete node from text document(find index of parent node, delete x lines down?)
+            //also find and delete picture from server by name (is this a thing?)
+
+        }
+
+        protected void btnSSLookBookDelete_Click(object sender, EventArgs e)
+        {
+            //above
         }
     }
 }
