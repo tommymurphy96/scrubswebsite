@@ -125,9 +125,10 @@ namespace Buncha_Scrubs
 
             for (int i = imagecheck.Count - 1; i >= 0; i--)
             {
-                if(imagecheck[i].InnerText.Equals(name))
+                if (string.Compare(imagecheck[i].InnerText, name, true) == 0)
                 {
-                    imagecheck[i].ParentNode.RemoveChild(imagecheck[i]);
+                    imagecheck[i].ParentNode.ParentNode.RemoveChild(imagecheck[i].ParentNode);
+                    break;
                 }
             }
             doc.Save(ConfigFile);

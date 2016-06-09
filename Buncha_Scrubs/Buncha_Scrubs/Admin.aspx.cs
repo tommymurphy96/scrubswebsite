@@ -13,19 +13,26 @@ namespace Buncha_Scrubs
     {
         protected void Page_PreRender(object sender, EventArgs e)
         {
-            xmlMaker xmlmaw = new xmlMaker(Server.MapPath("AutomnWinterLookBook.xml"));
+            if (!IsPostBack)
+            {
+                xmlMaker xmlmaw = new xmlMaker(Server.MapPath("AutomnWinterLookBook.xml"));
 
-            ddlAW.DataSource = xmlmaw.getXmlList();
-            ddlAW.DataValueField = "Name";
-            ddlAW.DataTextField = "Name";
-            ddlAW.DataBind();
+                ddlAW.DataSource = xmlmaw.getXmlList();
+                ddlAW.DataValueField = "Path";
+                ddlAW.DataTextField = "Name";
+                ddlAW.DataBind();
 
-            xmlMaker xmlmss = new xmlMaker(Server.MapPath("SpringSummerLookBook.xml"));
+                xmlMaker xmlmss = new xmlMaker(Server.MapPath("SpringSummerLookBook.xml"));
 
-            ddlSS.DataSource = xmlmss.getXmlList();
-            ddlSS.DataValueField = "Name";
-            ddlSS.DataTextField = "Name";
-            ddlSS.DataBind();
+                ddlSS.DataSource = xmlmss.getXmlList();
+                ddlSS.DataValueField = "Path";
+                ddlSS.DataTextField = "Name";
+                ddlSS.DataBind();
+            }
+
+            SSImage.ImageUrl = ddlSS.SelectedValue;
+            AWImage.ImageUrl = ddlAW.SelectedValue;
+            carouselImg.ImageUrl = RadioButtonList1.SelectedValue;
 
             //DirectoryInfo dir = new DirectoryInfo(MapPath("~/Images/"));
             //dlstImage.DataSource = dir.GetFiles();
@@ -77,7 +84,7 @@ namespace Buncha_Scrubs
 
         protected void btnSaveShop_Click(object sender, EventArgs e)
         {
-            string filePath = "~/Images/ShopThisBanner" + bannerUpload.FileName.Substring(bannerUpload.FileName.LastIndexOf("."));
+            string filePath = "~/Images/ShopThisBanner" + shopThisUpload.FileName.Substring(shopThisUpload.FileName.LastIndexOf("."));
 
             if (CheckFileType(filePath))
             {
@@ -87,7 +94,7 @@ namespace Buncha_Scrubs
 
         protected void btnSaveCollection_Click(object sender, EventArgs e)
         {
-            string filePath = "~/Images/ColletionBanner" + bannerUpload.FileName.Substring(bannerUpload.FileName.LastIndexOf("."));
+            string filePath = "~/Images/ColletionBanner" + collectionUpload.FileName.Substring(collectionUpload.FileName.LastIndexOf("."));
 
             if (CheckFileType(filePath))
             {
@@ -136,17 +143,20 @@ namespace Buncha_Scrubs
                 }
             }
             //if no match, append information to xml?
-            if (nodecheck == -1)
-            {
-                ssXml.addNode(SSLookBookUpload.FileName.ToString(), Server.MapPath(SSLookBookUpload.FileName.ToString())/*, txtSSLookbook.Text*/);
-            }
 
-            string filePath = "~/Images/" + SSLookBookUpload.FileName;
+            string filePath = "/Images/" + SSLookBookUpload.FileName;
 
             if (CheckFileType(filePath))
             {
                 SSLookBookUpload.SaveAs(MapPath(filePath));
+
+
+                if (nodecheck == -1)
+                {
+                    ssXml.addNode(SSLookBookUpload.FileName, filePath/*, txtSSLookbook.Text*/);
+                }
             }
+           
         }
         
 
@@ -154,7 +164,7 @@ namespace Buncha_Scrubs
         {
             xmlMaker awXml = new xmlMaker(Server.MapPath("AutomnWinterLookBook.xml"));
             awXml.deleteNode(ddlAW.Text);
-            FileInfo file = new FileInfo(ddlAW.SelectedValue);
+            FileInfo file = new FileInfo(Server.MapPath(ddlAW.SelectedValue));
             file.Delete();
         }
 
@@ -162,8 +172,20 @@ namespace Buncha_Scrubs
         {
             xmlMaker ssXml = new xmlMaker(Server.MapPath("SpringSummerLookBook.xml"));
             ssXml.deleteNode(ddlSS.Text);
-            FileInfo file = new FileInfo(ddlSS.SelectedValue);
+            FileInfo file = new FileInfo(Server.MapPath(ddlSS.SelectedValue));
             file.Delete();
+        }
+
+        protected void btnCarouselAdd_Click(object sender, EventArgs e)
+        {
+            
+                string filePath =  CarouselUpload.FileName;
+
+                if (CheckFileType(filePath))
+                {
+                    CarouselUpload.SaveAs(MapPath(RadioButtonList1.SelectedValue));
+                }
+            
         }
     }
 }
