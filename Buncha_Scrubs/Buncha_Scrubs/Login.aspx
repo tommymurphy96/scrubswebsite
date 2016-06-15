@@ -1,40 +1,18 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Buncha_Scrubs.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Buncha_Scrubs.Login" ValidateRequest="false"%>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head id="Head1" runat="server">
     <title></title>
-
 </head>
-
-
 <body>
-
-
-    <form method="post" name="Login_Form">
-    <table border="0" class="Table">
-    <?php if(isset($msg)){?>
-    <tr>
-      <td colspan="2"><?php echo $msg;?></td>
-    </tr>
-    <?php } ?>
-    <tr>
-      <td colspan="2"><h3>Login</h3></td>
-    </tr>
-    <tr>
-      <td>Username</td>
-      <td><input name="Username" type="text" class="Input"/></td>
-    </tr>
-    <tr>
-      <td>Password</td>
-      <td><input name="Password" type="password" class="Input"/></td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td><input name="Submit" type="submit" value="Login" class="Button3"/></td>
-    </tr>
-    </table>
+    <form id="form1" runat="server">
+    <div>
+        <h1>Avery Bow Admin Login</h1>
+        <asp:Label ID="lblUser" runat="server" Text="Username: "></asp:Label><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox><br />
+        <asp:Label ID="lblPass" runat="server" Text="Password: "></asp:Label><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox> &nbsp <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
+    </div>
     </form>
 </body>
 </html>
