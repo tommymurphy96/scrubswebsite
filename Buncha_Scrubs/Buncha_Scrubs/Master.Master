@@ -81,25 +81,23 @@
                                   </li>
                                   <li class="dropdown1"><a href="#" class="dropdown-toggle dropdown1 test1" data-toggle="dropdown">Shop-Prints<span class="caret"></span></a>
                                       <ul class="dropdown-menu">
-                                          <li><a href="#">Print 1</a></li>
-                                          <li><a href="#">Print 2</a></li>
-                                          <li><a href="#">Print 3</a></li>
-                                          <li><a href="#">Print 4</a></li>
-                                          <li><a href="#">Print 5</a></li>
-                                          <li><a href="#">Print 6</a></li>
-                                          <li><a href="#">Print 7</a></li>
-                                          <li><a href="#">Print 8</a></li>
-                                          <li><a href="#">Print 9</a></li>
-                                          <li><a href="#">Print 10</a></li>
-                                          <li><a href="#">Print 11</a></li>
-                                          <li><a href="#">Print 12</a></li>
-                                          <li><a href="#">Print 13</a></li>
-                                          <li><a href="#">Print 14</a></li>
-                                          <li><a href="#">Print 15</a></li>
-                                          <li><a href="#">Print 17</a></li>
-                                          <li><a href="#">Print 18</a></li>
-                                          <li><a href="#">Print 19</a></li>
-                                          <li><a href="#">Print 20</a></li>
+                                          <li><a href="#">Fish Dentures</a></li>
+                                          <li><a href="#">Hives</a></li>
+                                          <li><a href="#">Summer Nights</a></li>
+                                          <li><a href="#">Montogne Chaqul</a></li>
+                                          <li><a href="#">Naughtical Bow</a></li>
+                                          <li><a href="#">Garffiti Blue</a></li>
+                                          <li><a href="#">Garffiti Green</a></li>
+                                          <li><a href="#">Garffiti Orange</a></li>
+                                          <li><a href="#">Garffiti Pink</a></li>
+                                          <li><a href="#">Tibal Blue</a></li>
+                                          <li><a href="#">Tribal Brown</a></li>
+                                          <li><a href="#">Monochrome Pink</a></li>
+                                          <li><a href="#">Monochrome Blue</a></li>
+                                          <li><a href="#">Monochrome Yellow</a></li>
+                                          <li><a href="#">Monochrome Purple</a></li>
+                                          <li><a href="#">Monochrome Green</a></li>
+                                          <li><a href="#">Monochrome Orange</a></li>
                                       </ul>
                                   </li>
                                   <li><a href="BowTies.aspx">BowTies</a></li>
