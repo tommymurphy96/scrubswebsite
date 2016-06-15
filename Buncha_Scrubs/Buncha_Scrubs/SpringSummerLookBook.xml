@@ -1,49 +1,34 @@
 <images>
   <image>
     <path>\Prints\AW16 1.jpeg</path>
-    <shoplink>google.ca</shoplink>
-    <name>null</name>
+    <name>nullza</name>
   </image>
-
   <image>
     <path>\Prints\AW16 2.jpeg</path>
-    <shoplink>google.ca</shoplink>
-    <name>null</name>
+    <name>nullzb</name>
   </image>
-
   <image>
     <path>\Prints\AW16 3.jpeg</path>
-    <shoplink>google.ca</shoplink>
-    <name>null</name>
+    <name>nullzc</name>
   </image>
-
   <image>
     <path>\Prints\AW16 4.jpeg</path>
-    <shoplink>google.ca</shoplink>
-    <name>null</name>
+    <name>nullzd</name>
   </image>
-
   <image>
     <path>\Prints\AW16 5.jpeg</path>
-    <shoplink>google.ca</shoplink>
-    <name>null</name>
+    <name>nullze</name>
   </image>
-
   <image>
     <path>\Prints\AW16 6.jpeg</path>
-    <shoplink>google.ca</shoplink>
-    <name>null</name>
+    <name>nullzf</name>
   </image>
-
   <image>
     <path>\Prints\AW16 7.jpeg</path>
-    <shoplink>google.ca</shoplink>
-    <name>null</name>
+    <name>nullzg</name>
   </image>
-
   <image>
     <path>\Prints\AW16 8.jpeg</path>
-    <shoplink>google.ca</shoplink>
-    <name>null</name>
+    <name>nullzh</name>
   </image>
 </images>

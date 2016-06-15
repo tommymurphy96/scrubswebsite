@@ -103,9 +103,9 @@
         <asp:Repeater ID="rptGallery" runat="server">
             <ItemTemplate>
                 <div class="col-lg-3 col-md-4 col-sm-6">
-                    <a href='<%#Eval("Link")%>'>
+                    <%--<a href='<%#Eval("Link")%>'>--%>
                         <img src='<%#Eval("Path")%>' />
-                    </a>
+                   <%-- </a>--%>
                 </div>
             </ItemTemplate>
         </asp:Repeater>
