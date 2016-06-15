@@ -36,12 +36,18 @@
     padding: 0;
 }
 
+
+.mc_embed_signup {
+/*text-align:center;*/
+margin-left:250px;
+margin-right:250px;
+}
 .container.banner3 
 {
-    background: url(../Images/3.jpeg) no-repeat center center;
+    /*text-align:center;*/
+    float:right;
     position: relative;
     width: 100%;
-    height: 300px;
     padding: 0;
 }
 .carousel-inner {
@@ -162,6 +168,12 @@ a:-webkit-any-link {
     background: #ffffff;
     padding-top: 20px;
 }
+@media (max-width: 767px) {
+    .header-bottom {
+        display:block;
+        
+    }
+}
 .container {
     padding-right: 10px;
     padding-left: 10px;
@@ -214,7 +226,7 @@ a:-webkit-any-link {
 
 .row {
     margin-right: -10px;
-    margin-left: -10px;
+    margin-left: -15px;
     
 }
 .header-logo {
@@ -473,3 +485,4 @@ a:hover.back-to-top {
     margin-top:0px;
     margin-bottom:8px;
 }
+
