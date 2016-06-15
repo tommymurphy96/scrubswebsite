@@ -13,19 +13,26 @@ namespace Buncha_Scrubs
     {
         protected void Page_PreRender(object sender, EventArgs e)
         {
-            xmlMaker xmlmaw = new xmlMaker(Server.MapPath("AutomnWinterLookBook.xml"));
+            if (!IsPostBack)
+            {
+                xmlMaker xmlmaw = new xmlMaker(Server.MapPath("AutomnWinterLookBook.xml"));
 
-            ddlAW.DataSource = xmlmaw.GalleryImages;
-            ddlAW.DataValueField = "Path";
-            ddlAW.DataTextField = "Name";
-            ddlAW.DataBind();
+                ddlAW.DataSource = xmlmaw.getXmlList();
+                ddlAW.DataValueField = "Path";
+                ddlAW.DataTextField = "Name";
+                ddlAW.DataBind();
 
-            xmlMaker xmlmss = new xmlMaker(Server.MapPath("SpringSummerLookBook.xml"));
+                xmlMaker xmlmss = new xmlMaker(Server.MapPath("SpringSummerLookBook.xml"));
 
-            ddlSS.DataSource = xmlmss.GalleryImages;
-            ddlSS.DataValueField = "Path";
-            ddlSS.DataTextField = "Name";
-            ddlSS.DataBind();
+                ddlSS.DataSource = xmlmss.getXmlList();
+                ddlSS.DataValueField = "Path";
+                ddlSS.DataTextField = "Name";
+                ddlSS.DataBind();
+            }
+
+            SSImage.ImageUrl = ddlSS.SelectedValue;
+            AWImage.ImageUrl = ddlAW.SelectedValue;
+            carouselImg.ImageUrl = RadioButtonList1.SelectedValue;
 
             //DirectoryInfo dir = new DirectoryInfo(MapPath("~/Images/"));
             //dlstImage.DataSource = dir.GetFiles();
@@ -77,7 +84,7 @@ namespace Buncha_Scrubs
 
         protected void btnSaveShop_Click(object sender, EventArgs e)
         {
-            string filePath = "~/Images/ShopThisBanner" + bannerUpload.FileName.Substring(bannerUpload.FileName.LastIndexOf("."));
+            string filePath = "~/Images/ShopThisBanner" + shopThisUpload.FileName.Substring(shopThisUpload.FileName.LastIndexOf("."));
 
             if (CheckFileType(filePath))
             {
@@ -87,7 +94,7 @@ namespace Buncha_Scrubs
 
         protected void btnSaveCollection_Click(object sender, EventArgs e)
         {
-            string filePath = "~/Images/ColletionBanner" + bannerUpload.FileName.Substring(bannerUpload.FileName.LastIndexOf("."));
+            string filePath = "~/Images/ColletionBanner" + collectionUpload.FileName.Substring(collectionUpload.FileName.LastIndexOf("."));
 
             if (CheckFileType(filePath))
             {
@@ -96,26 +103,89 @@ namespace Buncha_Scrubs
         }
 
         protected void btnAWLookBookAdd_Click(object sender, EventArgs e)
-        {            
+        {   
             //check if any node already matches current name, and if so do nothing
-            //if no match, append information to xml... probably with a writeline?
+            xmlMaker awXml = new xmlMaker(Server.MapPath("AutomnWinterLookBook.xml"));
+            List<GalleryObject> glist = awXml.getXmlList();
+            int nodecheck = -1;
+            for (int i = 0; i < glist.Count();i++ )
+            {
+                if (String.Compare(glist[i].Name, AWLookBookUpload.FileName.ToString(), true) == 0)
+                {
+                    nodecheck = i;
+                }
+            }
+            //if no match, append information to xml?
+            if (nodecheck == -1)
+            {
+                awXml.addNode(AWLookBookUpload.FileName.ToString(), Server.MapPath(AWLookBookUpload.FileName.ToString())/*, txtAWLookbook.Text*/);
+            }
+
+            string filePath = "~/Images/" + AWLookBookUpload.FileName;
+
+            if (CheckFileType(filePath))
+            {
+                AWLookBookUpload.SaveAs(MapPath(filePath));
+            }
         }
 
         protected void btnSSLookBookAdd_Click(object sender, EventArgs e)
         {
-            //above
+            //check if any node already matches current name, and if so do nothing
+            xmlMaker ssXml = new xmlMaker(Server.MapPath("SpringSummerLookBook.xml"));
+            List<GalleryObject> glist = ssXml.getXmlList();
+            int nodecheck = -1;
+            for (int i = 0; i < glist.Count();i++ )
+            {
+                if (String.Compare(glist[i].Name, SSLookBookUpload.FileName.ToString(), true) == 0)
+                {
+                    nodecheck = i;
+                }
+            }
+            //if no match, append information to xml?
+
+            string filePath = "/Images/" + SSLookBookUpload.FileName;
+
+            if (CheckFileType(filePath))
+            {
+                SSLookBookUpload.SaveAs(MapPath(filePath));
+
+
+                if (nodecheck == -1)
+                {
+                    ssXml.addNode(SSLookBookUpload.FileName, filePath/*, txtSSLookbook.Text*/);
+                }
+            }
+           
         }
+        
 
         protected void btnAWLookBookDelete_Click(object sender, EventArgs e)
         {
-            //go through xml, find node by name, delete node from text document(find index of parent node, delete x lines down?)
-            //also find and delete picture from server by name (is this a thing?)
-
+            xmlMaker awXml = new xmlMaker(Server.MapPath("AutomnWinterLookBook.xml"));
+            awXml.deleteNode(ddlAW.Text);
+            FileInfo file = new FileInfo(Server.MapPath(ddlAW.SelectedValue));
+            file.Delete();
         }
 
         protected void btnSSLookBookDelete_Click(object sender, EventArgs e)
         {
-            //above
+            xmlMaker ssXml = new xmlMaker(Server.MapPath("SpringSummerLookBook.xml"));
+            ssXml.deleteNode(ddlSS.Text);
+            FileInfo file = new FileInfo(Server.MapPath(ddlSS.SelectedValue));
+            file.Delete();
+        }
+
+        protected void btnCarouselAdd_Click(object sender, EventArgs e)
+        {
+            
+                string filePath =  CarouselUpload.FileName;
+
+                if (CheckFileType(filePath))
+                {
+                    CarouselUpload.SaveAs(MapPath(RadioButtonList1.SelectedValue));
+                }
+            
         }
     }
 }

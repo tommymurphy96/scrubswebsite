@@ -16,7 +16,7 @@ namespace Buncha_Scrubs
         {
             xmlMaker xmlmss = new xmlMaker(Server.MapPath("SpringSummerLookBook.xml"));
 
-            rptGallery.DataSource = xmlmss.GalleryImages;
+            rptGallery.DataSource = xmlmss.getXmlList();
             rptGallery.DataBind();
         }
     }

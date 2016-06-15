@@ -16,7 +16,7 @@ namespace Buncha_Scrubs
         {
             xmlMaker xmlmaw = new xmlMaker(Server.MapPath("AutomnWinterLookBook.xml"));
 
-            rptGallery.DataSource = xmlmaw.GalleryImages;
+            rptGallery.DataSource = xmlmaw.getXmlList();
             rptGallery.DataBind();
         }
     }
