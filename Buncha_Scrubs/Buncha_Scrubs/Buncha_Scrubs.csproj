@@ -84,9 +84,12 @@
     <Content Include="Images\bg1.png" />
     <Content Include="Images\bg2.png" />
     <Content Include="Images\bg3.png" />
+    <Content Include="Images\bowtiemodel.png" />
+    <Content Include="Images\bowtiewriteup.png" />
     <Content Include="Images\candian bowtie.png" />
     <Content Include="Images\chat.png" />
     <Content Include="Images\FacebookIcon.png" />
+    <Content Include="Images\Fish Bow.png" />
     <Content Include="Images\Fish Dentures.jpg" />
     <Content Include="Images\gotop.png" />
     <Content Include="Images\HIVES %2816-9%29.png" />
@@ -150,6 +153,7 @@
     <Content Include="Temp.aspx" />
     <Content Include="Tops.aspx" />
     <Content Include="Accessories.aspx" />
+    <Content Include="shop-prints_landing.aspx" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Prints\AW16 1.jpeg" />
     <Content Include="Prints\AW16 2.jpeg" />
@@ -241,6 +245,13 @@
     </Compile>
     <Compile Include="Accessories.aspx.designer.cs">
       <DependentUpon>Accessories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shop-prints_landing.aspx.cs">
+      <DependentUpon>shop-prints_landing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shop-prints_landing.aspx.designer.cs">
+      <DependentUpon>shop-prints_landing.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

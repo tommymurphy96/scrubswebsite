@@ -10,7 +10,7 @@
 namespace Buncha_Scrubs {
     
     
-    public partial class Master {
+    public partial class WebForm5 {
         
         /// <summary>
         /// Head1 control.
@@ -29,23 +29,5 @@ namespace Buncha_Scrubs {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
-        /// Header control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Header;
-        
-        /// <summary>
-        /// ContactButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContactButton;
     }
 }
