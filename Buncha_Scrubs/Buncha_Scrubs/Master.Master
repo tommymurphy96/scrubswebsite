@@ -54,9 +54,7 @@
 <body>
 
 
- <form id="form1" runat="server">
-   <%-- <div>--%>
-      <asp:ContentPlaceHolder ID="Header" runat="server">
+ <form id="form1" runat="server">    
           <header class="site-header" role="banner">
               <div class="header-bottom">
                   <div class="container">
@@ -117,7 +115,7 @@
                   </div>
               </div>
           </header>
-    </asp:ContentPlaceHolder>
+   
 <!--Header-->
      <div class="container banner1">
         <div class="banner-data">
@@ -126,14 +124,11 @@
     <div class="container banner2">
         <div class="banner-data">
             <p class="right">
-                      <a class="btn btn-default" href="#" role="button">SHOP PRINT &raquo;</a>
+                      <a class="btn btn-default" href="#" role="button">Shop This Print &raquo;</a>
             </p>        
         </div>
-    </div>    
-   
-
-      <asp:ContentPlaceHolder ID="Carousel" runat="server">
-    <!--Carousel-->
+    </div>
+     <!--Carousel-->
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
               <ol class="carousel-indicators">
@@ -171,36 +166,39 @@
               </a>
           </div>
   <!--Carousel-->
- </asp:ContentPlaceHolder>
- <asp:ContentPlaceHolder ID="Footer" runat="server">
-
-
-
-      <div class="container banner3">
-          
-            
-    <div id="mc_embed_signup">       
-    <form action="//facebook.us13.list-manage.com/subscribe/post?u=faf3ddf2a30a218ed66990f9c&amp;id=c39e85f6c3" method="post" id="Form2" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="Div1">
-	<label for="mce-EMAIL">Stay in the know with all things Beau!</label>
-	<input type="email" value="" name="EMAIL" class="email" id="Email1" placeholder="email address" required/>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_faf3ddf2a30a218ed66990f9c_c39e85f6c3" tabindex="-1" value=""/></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="Submit1" class="button"/></div>
+    <div class="container banner3">
+        <div id="mc_embed_signup">       
+            <form action="//facebook.us13.list-manage.com/subscribe/post?u=faf3ddf2a30a218ed66990f9c&amp;id=c39e85f6c3" method="post" id="Form2" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="Div1">
+	            <label for="mce-EMAIL">Stay in the know with all things Beau!</label>
+	            <input type="email" value="" name="EMAIL" class="email" id="Email1" placeholder="email address" required/>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_faf3ddf2a30a218ed66990f9c_c39e85f6c3" tabindex="-1" value=""/></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="Submit1" class="button"/></div>
+            </div>
+            </form>
+        </div>
+   </div>
+<div class="container banner4">
+    <div class="banner-data">
+        <p class="left">
+            <a class="btn btn-default" href="#" role="button">Shop Scrub Collection&raquo;</a>
+        </p>        
     </div>
-</form>
 </div>
-                
-        
-    </div>
-
-  <!-- footer -->
+    <!-- footer -->
         <footer class="site-footer  panel-footer" role="contentinfo">
             <div class="container">
                 <div class="footer wow fadeInUp" data-wow-delay="750ms">
-                    <div>
-                    &copy; 2016 AveryBow.ca All Rights Reserved AveryBow&reg;. <a href="#" target="_blank">Privacy Policy</a> 
-                    </div>
+                    <div class="address">
+                    &copy; 2016 AveryBow.ca All Rights Reserved AveryBow&reg;
+                        <a href="#" target="_blank">Privacy Policy</a>
+                        <a href="#" target="_blank">FAQ</a>
+                        <a href="#" target="_blank">Careers</a>                       
+                        <a href="mailto:averybowcanada@gmail.com"><img src="Images/glyphicons-11-envelope.png"/></a>                       
+                        <a href="Images/banff.png"><img src="Images/glyphicons-243-map-marker.png" /></a>
+                        
+                    
                 <a href="https://www.facebook.com/AveryBowCanada/?fref=ts"/> 
                 <img src="Images/SimpleFb.ico" title="Facebook" alt="Facebook" class="img-circle FacebookImg" /> 
 
@@ -218,62 +216,15 @@
 
                 <a href="https://www.pinterest.com/"/>
                 <img src="Images/PinterestIcon.png" title="Pinterest" alt="Pinterest" class="img-circle PinImg" />
+                </div>
 
                 </div>
             </div>
     </footer>
           
   <!-- footer -->
-    </asp:ContentPlaceHolder>
+    
    </form>
- <asp:ContentPlaceHolder ID="ContactButton" runat="server">
-     <form id="test-form" class="white-popup-block mfp-hide">
-         <h1>Form</h1>
-         <fieldset style="border:0;">
-             <ol>
-                 <li>
-                     <label for="name">
-                     Name</label>
-                     <input id="name" name="name" placeholder="Name" required="" type="text"/> </li>
-                 <li>
-                     <label for="email">
-                     Email</label>
-                     <input id="email" name="email" placeholder="example@domain.com" required="" type="email"/> </li>
-                 <li>
-                     <label for="phone">
-                     Phone</label>
-                     <input id="phone" name="phone" placeholder="Eg. +447500000000" required="" type="tel"/> </li>
-                 <li>
-                     <label for="textarea">
-                     Textarea</label>
-                     <textarea id="textarea">Try to resize me to see how popup CSS-based resizing works.</textarea> </li>
-                 <li>
-                     <input type="submit" value="submit"/> </li>
-             </ol>
-         </fieldset>
-     </form>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('.popup-with-form').magnificPopup({
-            type: 'inline',
-            preloader: false,
-            focus: '#name',
-
-            // When elemened is focused, some mobile browsers in some cases zoom in
-            // It looks not nice, so we disable it:
-            callbacks: {
-                beforeOpen: function () {
-                    if ($(window).width() < 700) {
-                        this.st.focus = false;
-                    } else {
-                        this.st.focus = '#name';
-                    }
-                }
-            }
-        });
-    });
-</script>
-</asp:ContentPlaceHolder>
 <script type="text/javascript">
     // create the back to top button
     $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');

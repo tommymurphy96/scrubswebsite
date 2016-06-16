@@ -68,7 +68,7 @@
     <Content Include="Images\5.31.16_hp4m.jpg" />
     <Content Include="Images\ajax-loader.gif" />
     <Content Include="Images\AVERY BOW HIVES %2816-9%29 copy.png" />
-    <Content Include="Images\AVERY BOW HIVES AND BEAU L%27EAU %2816-9%29.png" />
+    <Content Include="Images\10.png" />
     <Content Include="Images\Avery Bow Logo.png" />
     <Content Include="Images\avrey.jpg" />
     <Content Include="Images\1.jpeg" />
@@ -79,6 +79,7 @@
     <Content Include="Images\6.jpeg" />
     <Content Include="Images\7.jpeg" />
     <Content Include="Images\8.jpeg" />
+    <Content Include="Images\banff.png" />
     <Content Include="Images\Beau River.png" />
     <Content Include="Images\bg.png" />
     <Content Include="Images\bg1.png" />
@@ -88,11 +89,14 @@
     <Content Include="Images\chat.png" />
     <Content Include="Images\FacebookIcon.png" />
     <Content Include="Images\Fish Dentures.jpg" />
+    <Content Include="Images\glyphicons-11-envelope.png" />
+    <Content Include="Images\glyphicons-243-map-marker.png" />
     <Content Include="Images\gotop.png" />
     <Content Include="Images\HIVES %2816-9%29.png" />
     <Content Include="Images\InstaIcon.ico" />
     <Content Include="Images\Meet Me At The Docks.jpg" />
-    <Content Include="Images\Meet Me At The Docks.png" />
+    <Content Include="Images\9.png" />
+    <Content Include="Images\MooseJawParking.jpg" />
     <Content Include="Images\next.png" />
     <Content Include="Images\PinterestIcon.png" />
     <Content Include="Images\PlayButton.png" />
