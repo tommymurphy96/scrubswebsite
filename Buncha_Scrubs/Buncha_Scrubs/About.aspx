@@ -96,11 +96,11 @@
                                         <li><a href="#">Summer Nights</a></li>
                                         <li><a href="#">Montogne Chaqul</a></li>
                                         <li><a href="#">Naughtical Bow</a></li>
-                                        <li><a href="#">Garffiti Blue</a></li>
-                                        <li><a href="#">Garffiti Green</a></li>
-                                        <li><a href="#">Garffiti Orange</a></li>
-                                        <li><a href="#">Garffiti Pink</a></li>
-                                        <li><a href="#">Tibal Blue</a></li>
+                                        <li><a href="#">Graffiti Blue</a></li>
+                                        <li><a href="#">Graffiti Green</a></li>
+                                        <li><a href="#">Graffiti Orange</a></li>
+                                        <li><a href="#">Graffiti Pink</a></li>
+                                        <li><a href="#">Tribal Blue</a></li>
                                         <li><a href="#">Tribal Brown</a></li>
                                         <li><a href="#">Monochrome Pink</a></li>
                                         <li><a href="#">Monochrome Blue</a></li>

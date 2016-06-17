@@ -154,7 +154,6 @@
     <Content Include="css\bootstrap.min.css.map" />
     <Content Include="Images\Thumbs.db" />
     <Content Include="BowTies.aspx" />
-    <Content Include="Temp.aspx" />
     <Content Include="Tops.aspx" />
     <Content Include="Accessories.aspx" />
     <Content Include="shop-prints_landing.aspx" />
@@ -228,13 +227,6 @@
     </Compile>
     <Compile Include="BowTies.aspx.designer.cs">
       <DependentUpon>BowTies.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Temp.aspx.cs">
-      <DependentUpon>Temp.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Temp.aspx.designer.cs">
-      <DependentUpon>Temp.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tops.aspx.cs">
       <DependentUpon>Tops.aspx</DependentUpon>
