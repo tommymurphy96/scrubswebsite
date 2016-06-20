@@ -117,14 +117,8 @@
           </header>
    
 <!--Header-->
-    <asp:contentplaceholder 
-                id="body" 
-                runat="server"/>
-
-
-
- 
-     <!-- footer -->
+    <asp:contentplaceholder  id="body"  runat="server"/>
+        <!-- footer -->
         <footer class="site-footer  panel-footer" role="contentinfo">
             <div class="container">
                 <div class="footer wow fadeInUp" data-wow-delay="750ms">
