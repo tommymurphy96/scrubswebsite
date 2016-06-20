@@ -84,7 +84,7 @@
                                           <li><a href="#">Spring/Summer 2017</a></li>
                                       </ul>
                                   </li>
-                                  <li class="dropdown1"><a href="#" class="dropdown-toggle dropdown1 test1" data-toggle="dropdown">Shop-Prints<span class="caret"></span></a>
+                                  <li class="dropdown1"><a href="Shop-Print.aspx" class="dropdown-toggle dropdown1 test1" data-toggle="dropdown">Shop-Prints<span class="caret"></span></a>
                                       <ul class="dropdown-menu">
                                           <li><a href="#">Fish Dentures</a></li>
                                           <li><a href="#">Hives</a></li>
