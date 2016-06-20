@@ -32,20 +32,21 @@
             &nbsp<asp:Button ID="btnSaveShop" runat="server" Text="Upload" OnClick="btnSaveShop_Click" />
         </div>
         <div class="altgrey">
-            <p>COLLECTION BANNER</p>
-            <asp:FileUpload ID="collectionUpload" runat="server" />
-            &nbsp<asp:Button ID="btnSaveCollection" runat="server" Text="Upload" OnClick="btnSaveCollection_Click" />
-        </div>
-        <div class="altgrey">
+
             <p>CAROUSEL BANNER</p>
             <asp:FileUpload ID="CarouselUpload" runat="server" />
             <asp:RadioButtonList ID="RadioButtonList1" runat="server" AutoPostBack="true">
-                <asp:ListItem Text="social media" Value="~/Images/Carousel1.png"></asp:ListItem>
-                <asp:ListItem Text="print of the week" Value="~/Images//Carousel2.png"></asp:ListItem>
-                <asp:ListItem Text="featured bowtie" Value="~/Images/Carousel3.png"></asp:ListItem>
+                <asp:ListItem Text="social media" Value="~//Images//Carousel1.png"></asp:ListItem>
+                <asp:ListItem Text="print of the week" Value="~//Images//Carousel2.png"></asp:ListItem>
+                <asp:ListItem Text="featured bowtie" Value="~//Images/Carousel3.png"></asp:ListItem>
             </asp:RadioButtonList>
-            <asp:Image ID="carouselImg"  runat="server" ImageUrl="~/Images/Avery Bow Logo.png"/>
+            <asp:Image ID="carouselImg" runat="server" ImageUrl="~/Images/Avery Bow Logo.png" />
             <asp:Button ID="btnCarouselAdd" runat="server" Text="Upload" OnClick="btnCarouselAdd_Click" />
+        </div>
+        <div class="altgrey">
+            <p>COLLECTION BANNER</p>
+            <asp:FileUpload ID="collectionUpload" runat="server" />
+            &nbsp<asp:Button ID="btnSaveCollection" runat="server" Text="Upload" OnClick="btnSaveCollection_Click" />
         </div>
         <div class="altgrey">
             <p>AW LOOKBOOK</p>
@@ -57,8 +58,8 @@
             </div>
             <div class="red">
                 <p>DELETE</p>
-                <asp:DropDownList runat="server" ID="ddlAW" AutoPostBack="true" ></asp:DropDownList>
-                <asp:Image ID="AWImage"  runat="server" ImageUrl="~/Images/Avery Bow Logo.png"/>
+                <asp:DropDownList runat="server" ID="ddlAW" AutoPostBack="true"></asp:DropDownList>
+                <asp:Image ID="AWImage" runat="server" ImageUrl="~/Images/Avery Bow Logo.png" />
                 <asp:Button ID="btnAWLookBookDelete" runat="server" Text="Delete" OnClick="btnAWLookBookDelete_Click" />
             </div>
         </div>
@@ -73,7 +74,7 @@
             <div class="red">
                 <p>DELETE</p>
                 <asp:DropDownList runat="server" ID="ddlSS" AutoPostBack="true"></asp:DropDownList>
-                <asp:Image ID="SSImage"  runat="server" ImageUrl="~/Images/Avery Bow Logo.png"/>
+                <asp:Image ID="SSImage" runat="server" ImageUrl="~/Images/Avery Bow Logo.png" />
                 <asp:Button ID="btnSSLookBookDelete" runat="server" Text="Delete" OnClick="btnSSLookBookDelete_Click" />
             </div>
         </div>
