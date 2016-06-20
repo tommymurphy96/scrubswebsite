@@ -156,7 +156,7 @@
     <Content Include="BowTies.aspx" />
     <Content Include="Tops.aspx" />
     <Content Include="Accessories.aspx" />
-    <Content Include="shop-prints_landing.aspx" />
+    <Content Include="Shop-Print.aspx" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Prints\AW16 1.jpeg" />
     <Content Include="Prints\AW16 2.jpeg" />
@@ -242,12 +242,12 @@
     <Compile Include="Accessories.aspx.designer.cs">
       <DependentUpon>Accessories.aspx</DependentUpon>
     </Compile>
-    <Compile Include="shop-prints_landing.aspx.cs">
-      <DependentUpon>shop-prints_landing.aspx</DependentUpon>
+    <Compile Include="Shop-Print.aspx.cs">
+      <DependentUpon>Shop-Print.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="shop-prints_landing.aspx.designer.cs">
-      <DependentUpon>shop-prints_landing.aspx</DependentUpon>
+    <Compile Include="Shop-Print.aspx.designer.cs">
+      <DependentUpon>Shop-Print.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
