@@ -13,6 +13,11 @@ namespace Buncha_Scrubs
     {
         protected void Page_PreRender(object sender, EventArgs e)
         {
+            if (Session["valid"] == null || !(bool)Session["valid"])
+            {
+                Response.Redirect("~/Default.aspx");
+            }
+
             if (!IsPostBack)
             {
                 xmlMaker xmlmaw = new xmlMaker(Server.MapPath("AutomnWinterLookBook.xml"));

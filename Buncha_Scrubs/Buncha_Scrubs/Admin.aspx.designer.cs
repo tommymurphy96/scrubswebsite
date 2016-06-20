@@ -67,24 +67,6 @@ namespace Buncha_Scrubs {
         protected global::System.Web.UI.WebControls.Button btnSaveShop;
         
         /// <summary>
-        /// collectionUpload control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload collectionUpload;
-        
-        /// <summary>
-        /// btnSaveCollection control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSaveCollection;
-        
-        /// <summary>
         /// CarouselUpload control.
         /// </summary>
         /// <remarks>
@@ -119,6 +101,24 @@ namespace Buncha_Scrubs {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCarouselAdd;
+        
+        /// <summary>
+        /// collectionUpload control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload collectionUpload;
+        
+        /// <summary>
+        /// btnSaveCollection control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSaveCollection;
         
         /// <summary>
         /// AWLookBookUpload control.

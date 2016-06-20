@@ -18,8 +18,8 @@ namespace Buncha_Scrubs
         {
             if (TextBox1.Text == "AveryBow" && TextBox2.Text == "AB1234")
             {
+                Session["valid"] = true;
                 Response.Redirect("admin.aspx");
-                Session["valid"] = "true";
             }
         }
     }
