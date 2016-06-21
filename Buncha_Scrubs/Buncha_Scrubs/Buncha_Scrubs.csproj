@@ -156,7 +156,7 @@
     <Content Include="BowTies.aspx" />
     <Content Include="Tops.aspx" />
     <Content Include="Accessories.aspx" />
-    <Content Include="Shop-Print.aspx" />
+    <Content Include="Fish Dentures.aspx" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Prints\AW16 1.jpeg" />
     <Content Include="Prints\AW16 2.jpeg" />
@@ -242,12 +242,12 @@
     <Compile Include="Accessories.aspx.designer.cs">
       <DependentUpon>Accessories.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Shop-Print.aspx.cs">
-      <DependentUpon>Shop-Print.aspx</DependentUpon>
+    <Compile Include="Fish Dentures.aspx.cs">
+      <DependentUpon>Fish Dentures.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Shop-Print.aspx.designer.cs">
-      <DependentUpon>Shop-Print.aspx</DependentUpon>
+    <Compile Include="Fish Dentures.aspx.designer.cs">
+      <DependentUpon>Fish Dentures.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -9,7 +9,7 @@
     <div class="container banner2">
         <div class="banner-data">
             <p class="right">
-                      <a class="btn btn-default" href="#" role="button">Shop This Print &raquo;</a>
+                      <a class="btn btn-default" href="Fish Dentures.aspx" role="button">Shop This Print &raquo;</a>
             </p>        
         </div>
     </div>
