@@ -83,8 +83,8 @@
                               <ul class="nav navbar-nav">
                                   <li class="dropdown"><a href="#" class="dropdown-toggle test" data-toggle="dropdown">LookBook<span class="caret"></span></a>
                                       <ul class="dropdown-menu">
-                                          <li><a href="AWLookBook.aspx">Automn/Winter 2016</a></li>
-                                          <li><a href="SSLookBook.aspx">Spring/Summer 2017</a></li>
+                                          <li><a href="AutumnWinterLookBook.aspx">Autumn/Winter 2016</a></li>
+                                          <li><a href="SpringSummerLookBook.aspx">Spring/Summer 2017</a></li>
                                       </ul>
                                   </li>
                                   <li class="dropdown1"><a href="Shop-Print.aspx" class="dropdown-toggle dropdown1 test1" data-toggle="dropdown">Shop-Prints<span class="caret"></span></a>
